@@ -1,5 +1,7 @@
 # manahost
 
+<img src="manahost/resources/manahost.svg" alt="manahost" width="96" align="right" />
+
 A small ManaTools dialog to inspect and edit the system hostname metadata
 exposed by the `org.freedesktop.hostname1` D-Bus interface.
 
@@ -11,6 +13,22 @@ exposed by the `org.freedesktop.hostname1` D-Bus interface.
   the python ManaTools backend abstraction library 
 - logging
 - provides a ManaTools `HelpDialog` with field explanations and tooltips on fields
+
+<br clear="right"/>
+
+## Screenshots
+
+### Qt backend
+![Qt backend](<screenshots/ManaHost Qt.png> "Qt backend")
+
+### Gtk backend
+![Gtk backend](<screenshots/ManaHost Gtk.png> "Gtk backend")
+
+### ncurses backend
+![ncurses backend](<screenshots/ManaHost ncurses.png> "ncurses backend")
+
+### web backend
+![web backend](<screenshots/ManaHost web.png> "web backend")
 
 ## Usage
 
