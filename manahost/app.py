@@ -68,6 +68,43 @@ def _python_manatools_version() -> str:
         return "unknown"
 
 
+def _localize_legacy_appargs(parser):
+    """Translate common AppArgs entries when using legacy python-manatools."""
+    option_help_map = {
+        "--help": _("show this help message and exit"),
+        "--gtk": _("start using Gtk backend"),
+        "--ncurses": _("start using ncurses backend"),
+        "--qt": _("start using Qt backend"),
+        "--locales-dir": _("directory containing localization strings (developer only)"),
+        "--version": _("show application version and exit"),
+    }
+    if getattr(parser, "_optionals", None) is not None:
+        parser._optionals.title = _("options")
+    parser.usage = f"%(prog)s [{_('options')}]"
+    for action in getattr(parser, "_actions", []):
+        for option in action.option_strings:
+            text = option_help_map.get(option)
+            if text:
+                action.help = text
+                break
+
+
+def _create_args_parser(locales_dir):
+    """Build AppArgs parser, supporting both new and legacy python-manatools APIs."""
+    try:
+        return AppArgs(APP_NAME, localedir=locales_dir).parser
+    except TypeError as exc:
+        if "localedir" not in str(exc):
+            raise
+        logger.warning(
+            "Installed python-manatools does not support AppArgs(localedir=...). "
+            "Falling back to legacy AppArgs API."
+        )
+        parser = AppArgs(APP_NAME).parser
+        _localize_legacy_appargs(parser)
+        return parser
+
+
 def _configure_logging(args) -> None:
     """Configure the logger according to the CLI switches and backend selection."""
     root = logging.getLogger()
@@ -134,8 +171,7 @@ def main(argv=None):
     early_locales_dir = _extract_locales_dir(argv)
     _configure_i18n(early_locales_dir or DEFAULT_LOCALE_DIR)
 
-    args_obj = AppArgs(APP_NAME, localedir=early_locales_dir or DEFAULT_LOCALE_DIR)
-    parser = args_obj.parser
+    parser = _create_args_parser(early_locales_dir or DEFAULT_LOCALE_DIR)
     parser.description = _(APP_CLI_DESCRIPTION)
     parser.add_argument("--logging", action="store_true", help=_("Enable application logging on the console."))
     parser.add_argument("--log-file", metavar="PATHNAME", help=_("Write log entries to PATHNAME instead of the console."))
