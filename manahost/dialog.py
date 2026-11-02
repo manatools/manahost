@@ -32,6 +32,7 @@ class HostnameDialog(basedialog.BaseDialog):
     _LABEL_COLUMN_WIDTH = 220
     _ICON_PREVIEW_SIZE = 24
     _ICON_FALLBACK_NAME = "computer"
+    _WARNING_DIALOG_SIZE = {"width": 560, "height": 220}
     _TOOLTIPS = {
         "hostname": _("Transient hostname for the current running system."),
         "static_hostname": _("Persistent hostname stored on disk and used at boot."),
@@ -287,22 +288,23 @@ class HostnameDialog(basedialog.BaseDialog):
             return
 
         try:
-            self._status.save(changes)
-            self._reload_from_system()
-            self._save_button.setEnabled(False)
+            self._status.save(changes)            
             logger.info("Saved hostname changes: %s", changes)
         except ValueError as exc:
             logger.warning("Hostname input validation failed: %s", exc)
-            ui.warningMsgBox({
-                "title": _("Invalid input"),
-                "text": _("One or more fields contain invalid values.\n\nDetails: %s") % str(exc),
-            })
+            self._show_warning(
+                _("Invalid input"),
+                _("One or more fields contain invalid values.\n\nDetails: %s") % str(exc),
+            )
         except Exception as exc:
             logger.exception("Unexpected error while saving hostname changes")
-            ui.warningMsgBox({
-                "title": _("Save failed"),
-                "text": _("Unable to save hostname values through D-Bus.\n\nDetails: %s") % str(exc),
-            })
+            self._show_warning(
+                _("Save failed"),
+                _("Unable to save hostname values through D-Bus.\n\nDetails: %s") % str(exc),
+            )
+        finally:
+            self._reload_from_system()
+            self._save_button.setEnabled(False)
 
     def _reload_from_system(self):
         """Reload hostname values from D-Bus after a successful write."""
@@ -310,10 +312,10 @@ class HostnameDialog(basedialog.BaseDialog):
             self._status = HostnameStatus.load()
         except Exception as exc:
             logger.exception("Hostname status reload failed after save")
-            ui.warningMsgBox({
-                "title": _("Reload failed"),
-                "text": _("Changes were sent, but reloading current system values failed.\n\nDetails: %s") % str(exc),
-            })
+            self._show_warning(
+                _("Reload failed"),
+                _("Changes were sent, but reloading current system values failed.\n\nDetails: %s") % str(exc),
+            )
             self._initial_values = {
                 key: widget.value().strip()
                 for key, widget in self._editable_fields.items()
@@ -356,3 +358,11 @@ class HostnameDialog(basedialog.BaseDialog):
             dialog.run()
         except Exception:
             logger.exception("Unable to open Help dialog")
+
+    def _show_warning(self, title, text):
+        """Show warning popups with homogeneous dimensions across backends."""
+        ui.warningMsgBox({
+            "title": title,
+            "text": text,
+            "size": self._WARNING_DIALOG_SIZE,
+        })
