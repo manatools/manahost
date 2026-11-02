@@ -1,0 +1,357 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the manahost package.
+#
+# Translators:
+# SPDX-FileCopyrightText: 2026 Yuri Chornoivan <yurchor@ukr.net>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: manahost 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-02 15:02+0100\n"
+"PO-Revision-Date: 2026-11-02 20:14+0200\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"X-Generator: Lokalize 25.12.1\n"
+
+#: manahost/__init__.py:27
+msgid "ManaTools manahost"
+msgstr "manahost з ManaTools"
+
+#: manahost/__init__.py:30
+msgid ""
+"Graphical hostname control tool using org.freedesktop.hostname1 with a "
+"backend-independent ManaTools Abstract User Interface."
+msgstr ""
+"Графічний інструмент для керування назвою вузла за допомогою "
+"org.freedesktop.hostname1 з незалежним від модуля інтерфейсом абстрагування "
+"ManaTools."
+
+#: manahost/__init__.py:35
+msgid "Manage the system hostname through the systemd hostname1 API."
+msgstr ""
+"Керування назвою вузла системи за допомогою програмного інтерфейсу hostname1 "
+"з systemd."
+
+#: manahost/app.py:99
+msgid "Developers"
+msgstr "Розробники"
+
+#: manahost/app.py:105
+msgid "Project Links"
+msgstr "Посилання на проєкт"
+
+#: manahost/app.py:112
+msgid "Runtime"
+msgstr "Динамічний"
+
+#: manahost/app.py:140
+msgid "Enable application logging on the console."
+msgstr "Увімкнути ведення журналу програми у консолі."
+
+#: manahost/app.py:141
+msgid "Write log entries to PATHNAME instead of the console."
+msgstr "Записувати журналу до PATHNAME замість консолі."
+
+#: manahost/app.py:142
+msgid "Enable debug logging output."
+msgstr "Увімкнути діагностичне виведення до журналу."
+
+#: manahost/dialog.py:36
+msgid "Transient hostname for the current running system."
+msgstr "Тимчасова назва вузла для поточної запущеної системи."
+
+#: manahost/dialog.py:37
+msgid "Persistent hostname stored on disk and used at boot."
+msgstr ""
+"Стала назва вузла, яку буде збережено на диску і використано при "
+"завантаженні системи."
+
+#: manahost/dialog.py:38
+msgid "Human-friendly hostname used in desktop and shell views."
+msgstr ""
+"Зручна для читання назва вузла, яку буде використано у стільничному "
+"середовищі та консолі."
+
+#: manahost/dialog.py:39
+msgid "Desktop icon name representing the machine class."
+msgstr "Назва піктограми стільниці, яка відповідає класу комп'ютера."
+
+#: manahost/dialog.py:40
+msgid "Hardware chassis type (desktop, laptop, vm, server, etc.)."
+msgstr ""
+"Тип апаратної частини (робоча станція, ноутбук, віртуальна машина, сервер "
+"тощо)."
+
+#: manahost/dialog.py:62
+msgid "System hostname"
+msgstr "Загальносистемна назва вузла"
+
+#: manahost/dialog.py:63
+msgid "Hostname"
+msgstr "Назва вузла"
+
+#: manahost/dialog.py:64
+msgid "Static hostname"
+msgstr "Статична назва вузла"
+
+#: manahost/dialog.py:65
+msgid "Pretty hostname"
+msgstr "Зручна назва вузла"
+
+#: manahost/dialog.py:66
+msgid "Icon name"
+msgstr "Назва піктограми"
+
+#: manahost/dialog.py:67
+msgid "Chassis"
+msgstr "Апаратний блок"
+
+#: manahost/dialog.py:70
+msgid "System information"
+msgstr "Дані щодо системи"
+
+#: manahost/dialog.py:71
+msgid "Kernel"
+msgstr "Ядро"
+
+#: manahost/dialog.py:72
+msgid "Operating system"
+msgstr "Операційна система"
+
+#: manahost/dialog.py:73
+msgid "Hardware vendor"
+msgstr "Виробник обладнання"
+
+#: manahost/dialog.py:74
+msgid "Hardware model"
+msgstr "Модель обладнання"
+
+#: manahost/dialog.py:75
+msgid "Hardware SKU"
+msgstr "SKU обладнання"
+
+#: manahost/dialog.py:76
+msgid "Hardware version"
+msgstr "Версія обладнання"
+
+#: manahost/dialog.py:77
+msgid "Firmware version"
+msgstr "Версія мікропрограми"
+
+#: manahost/dialog.py:78
+msgid "Firmware date"
+msgstr "Стан мікропрограми"
+
+#: manahost/dialog.py:79
+msgid "Machine ID"
+msgstr "Ід. комп’ютера"
+
+#: manahost/dialog.py:80
+msgid "Boot ID"
+msgstr "Ід. завантаження"
+
+#: manahost/dialog.py:85
+msgid "&Help"
+msgstr "&Довідка"
+
+#: manahost/dialog.py:86
+msgid "Open help with field descriptions and usage notes."
+msgstr "Відкрити довідку з описами полів на нотатками щодо користування."
+
+#: manahost/dialog.py:89
+msgid "&About"
+msgstr "Пр&о програму"
+
+#: manahost/dialog.py:90
+msgid "Show application information, version and credits."
+msgstr "Показати дані щодо програми, версію та подяки авторам."
+
+#: manahost/dialog.py:93
+msgid "&Save"
+msgstr "З&берегти"
+
+#: manahost/dialog.py:95
+msgid "Save modified hostname values to the system."
+msgstr "Зберегти змінені значення назв вузла до системи."
+
+#: manahost/dialog.py:98
+msgid "&Close"
+msgstr "За&крити"
+
+#: manahost/dialog.py:99
+msgid "Close this dialog without applying new changes."
+msgstr "Закрити це вікно без застосування змін."
+
+#: manahost/dialog.py:185
+msgid "Allow editing chassis manually"
+msgstr "Дозволити редагування апаратної частини вручну"
+
+#: manahost/dialog.py:189
+msgid "Enable only if automatic chassis detection is missing or incorrect."
+msgstr ""
+"Вмикайте, лише якщо автоматичне визначення апаратної частини не працює або "
+"працює неправильно."
+
+#: manahost/dialog.py:233
+msgid "Preview"
+msgstr "Перегляд"
+
+#: manahost/dialog.py:236
+msgid "Preview of the icon selected in Icon name."
+msgstr "Перегляд піктограми, яку вибрано у полі «Назва піктограми»."
+
+#: manahost/dialog.py:297
+msgid "Invalid input"
+msgstr "Некоректні вхідні дані"
+
+#: manahost/dialog.py:298
+#, python-format
+msgid ""
+"One or more fields contain invalid values.\n"
+"\n"
+"Details: %s"
+msgstr ""
+"В одному або декількох полях містяться некоректні значення.\n"
+"\n"
+"Подробиці: %s"
+
+#: manahost/dialog.py:303
+msgid "Save failed"
+msgstr "Помилка при збереженні"
+
+#: manahost/dialog.py:304
+#, python-format
+msgid ""
+"Unable to save hostname values through D-Bus.\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Не вдалося зберегти значення назви вузла за допомогою D-Bus.\n"
+"\n"
+"Подробиці: %s"
+
+#: manahost/dialog.py:314
+msgid "Reload failed"
+msgstr "Не вдалося перезавантажити"
+
+#: manahost/dialog.py:315
+#, python-format
+msgid ""
+"Changes were sent, but reloading current system values failed.\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Зміни надіслано, але не вдалося перезавантажити поточні загальносистемні "
+"значення.\n"
+"\n"
+"Подробиці: %s"
+
+#: manahost/helpinfo.py:26
+msgid "Go to index"
+msgstr "Перейти до покажчика"
+
+#: manahost/helpinfo.py:27 manahost/helpinfo.py:45
+msgid "Editable fields"
+msgstr "Придатні до редагування поля"
+
+#: manahost/helpinfo.py:28 manahost/helpinfo.py:66
+msgid "Chassis field policy"
+msgstr "Правила полів апаратної частини"
+
+#: manahost/helpinfo.py:29 manahost/helpinfo.py:76
+msgid "Applying changes"
+msgstr "Застосування змін"
+
+#: manahost/helpinfo.py:39
+msgid ""
+"This tool reads and writes hostname information through "
+"org.freedesktop.hostname1 on D-Bus."
+msgstr ""
+"Ця програма читає і записує дані щодо назви вузла за допомогою "
+"org.freedesktop.hostname1 на D-Bus."
+
+#: manahost/helpinfo.py:47
+msgid ""
+"<ul><li><b>Hostname</b>: transient runtime hostname. This property is the "
+"actual hostname configured in the kernel.<br>It can be different from the "
+"static hostname. This property is never empty.</li><li><b>Static hostname</"
+"b>: persistent hostname saved on disk and configured in /etc/hostname.</"
+"li><li><b>Pretty hostname</b>: user-friendly display name. This property "
+"exposes the pretty hostname which is a free-form UTF-8 hostname for "
+"presentation to the user.<br>User interfaces should ensure that the pretty "
+"hostname and the static hostname stay in sync. E.g. when the former is "
+"<i>Lennart’s Computer</i> the latter should be <i>lennarts-computer</i>.</"
+"li><li><b>Icon name</b>: desktop icon identifier for the machine. This "
+"property exposes the icon name following the XDG icon naming specification."
+"<br>If not set, information such as the chassis type (see below) is used to "
+"find a suitable fallback icon name (i.e. <i>computer-laptop</i> vs. "
+"<i>computer-desktop</i> is picked based on the chassis information). If no "
+"such data is available, the empty string is returned.<br>In that case an "
+"application should fall back to a replacement icon, for example <i>computer</"
+"i>.<br>If this property is set to the empty string, the automatic fallback "
+"name selection is enabled again.</li><li><b>Chassis</b>: hardware type "
+"(desktop, laptop, vm, server, etc.). This property exposes a chassis type, "
+"one of the currently defined chassis types.<br>Note that in most cases the "
+"chassis type will be determined automatically from DMI/SMBIOS/ACPI firmware "
+"information.<br>Writing to this setting is hence useful only to override "
+"misdetected chassis types, or to configure the chassis type if it could not "
+"be auto-detected.<br>Set this property to the empty string to reenable the "
+"automatic detection of the chassis type from firmware information.</li></ul>"
+msgstr ""
+"<ul><li><b>Назва вузла</b>: поточна назва вузла у системі. Це фактична назва "
+"вузла, налаштована в ядрі.<br>Вона може відрізнятися від статичної назви "
+"вузла. Це значення ніколи не буває порожнім.</li><li><b>Статична назва "
+"вузла</b>: стала назва вузла, яка зберігається на диску та визначена у "
+"файлі /etc/hostname.</li><li><b>Зручна назва</b>: назва, призначена для "
+"показу користувачеві. Це довільний рядок у кодуванні UTF-8, який буде "
+"використано для представлення вузла користувачеві.<br>Інтерфейси користувача "
+"повинні забезпечувати синхронізацію зручної назви та статичної назви вузла. "
+"Наприклад, якщо зручна назва — <i>Lennart’s Computer</i>, то статична назва "
+"бути <i>lennarts-computer</i>.</li><li><b>Назва піктограми</b>: "
+"ідентифікатор піктограми для комп'ютера. Це значення вказує назву піктограми "
+"відповідно до специфікації іменування піктограм XDG.<br>Якщо значення не "
+"задано, для пошуку відповідної піктограми типово буде використано відомості "
+"про тип апаратної частини (див. нижче) — наприклад, буде вибрано <i>computer-"
+"laptop</i> або <i>computer-desktop</i> залежно від типу пристрою. Якщо таких "
+"даних немає, буде повернуто порожній рядок.<br>У такому разі програма має "
+"використовувати запасну піктограму, наприклад <i>computer</i>.<br>Якщо для "
+"цієї властивості встановлено порожній рядок, автоматичний підбір назви "
+"піктограми типово буде увімкнено знову.</li><li><b>Апаратна частина</b>: тип "
+"апаратного забезпечення (робоча станція, ноутбук, віртуальна машина, сервер "
+"тощо).</li></ul> Ця властивість вказує тип апаратної частини — один із "
+"наявних визначених типів.<br>Зауважте, що в більшості випадків тип апаратної "
+"частини визначається автоматично на основі даних мікропрограми (DMI/SMBIOS/"
+"ACPI).<br>Отже, зміна цього параметра доцільна лише в тому разі, якщо тип "
+"апаратної частини було визначено неправильно, або якщо його не вдалося "
+"виявити автоматично.<br>Щоб відновити автоматичне визначення типу апаратної "
+"частини на основі даних мікропрограми, встановіть для цієї властивості "
+"значення порожнього рядка.</li></ul>"
+
+#: manahost/helpinfo.py:68
+msgid ""
+"Chassis is usually auto-detected correctly by the system. For safety, manual "
+"editing is disabled by default when a value already exists. If chassis is "
+"empty, manual editing is enabled by default through the dedicated checkbox."
+msgstr ""
+"Система зазвичай автоматично і правильно визначає тип апаратної частини. З "
+"міркувань безпеки, якщо значення вже задано, можливість редагування вручну "
+"буде типово вимкнено. Якщо поле для типу апаратної частини порожнє, типово "
+"доступне редагування вручну — для цього передбачено спеціальний пункт."
+
+#: manahost/helpinfo.py:78
+msgid ""
+"After pressing Save, changes are sent through D-Bus and the dialog reloads "
+"values from the running system to show the effective state."
+msgstr ""
+"Після натискання кнопки «Зберегти» зміни буде надіслано за допомогою D-Bus, "
+"а вміст значень у вікні буде перезавантажено з системи, щоб показати "
+"поточний стан."
