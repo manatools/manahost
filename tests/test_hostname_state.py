@@ -1,4 +1,10 @@
+import os
+import shutil
+import subprocess
+import sys
+import tempfile
 import unittest
+from pathlib import Path
 from types import SimpleNamespace
 from unittest import mock
 
@@ -154,6 +160,56 @@ class HostnameStatusTests(unittest.TestCase):
             self.assertEqual(status.writable_fields(), {"hostname"})
             self.assertEqual(status.writable_fields(), {"hostname"})
         self.assertEqual(introspectable.calls, 1)
+
+    def test_localized_help_uses_shared_python_manatools_catalog(self):
+        if shutil.which("msgfmt") is None:
+            self.skipTest("msgfmt not available")
+
+        project_root = Path(__file__).resolve().parents[1]
+        shared_root = project_root.parent / "python-manatools"
+        self.assertTrue((shared_root / "po" / "it.po").is_file())
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            locale_root = Path(temp_dir)
+            message_dir = locale_root / "it" / "LC_MESSAGES"
+            message_dir.mkdir(parents=True)
+
+            subprocess.run(
+                ["msgfmt", str(project_root / "po" / "it.po"), "-o", str(message_dir / "manahost.mo")],
+                check=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True,
+            )
+            subprocess.run(
+                ["msgfmt", str(shared_root / "po" / "it.po"), "-o", str(message_dir / "python-manatools.mo")],
+                check=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True,
+            )
+
+            env = os.environ.copy()
+            pythonpath = [str(project_root), str(shared_root)]
+            existing = env.get("PYTHONPATH")
+            if existing:
+                pythonpath.append(existing)
+            env["PYTHONPATH"] = os.pathsep.join(pythonpath)
+
+            result = subprocess.run(
+                [sys.executable, "-m", "manahost.app", "--locales-dir", str(locale_root), "--help"],
+                cwd=str(project_root),
+                env=env,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("usage: manahost [opzioni]", result.stdout)
+        self.assertIn("opzioni:", result.stdout)
+        self.assertIn("avvia usando il backend Gtk", result.stdout)
+        self.assertIn("mostra questo messaggio di aiuto ed esce", result.stdout)
 
 
 if __name__ == "__main__":
