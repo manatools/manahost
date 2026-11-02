@@ -29,5 +29,16 @@ include = ["manahost*"]
 [tool.setuptools.package-data]
 manahost = ["resources/*.svg"]
 
+[tool.setuptools.data-files]
+"share/applications" = ["share/applications/org.mageia.manahost.desktop"]
+"share/icons/hicolor/scalable/apps" = ["share/icons/hicolor/scalable/apps/manahost.svg"]
+"share/icons/hicolor/16x16/apps" = ["share/icons/hicolor/16x16/apps/manahost.png"]
+"share/icons/hicolor/24x24/apps" = ["share/icons/hicolor/24x24/apps/manahost.png"]
+"share/icons/hicolor/32x32/apps" = ["share/icons/hicolor/32x32/apps/manahost.png"]
+"share/icons/hicolor/48x48/apps" = ["share/icons/hicolor/48x48/apps/manahost.png"]
+"share/icons/hicolor/64x64/apps" = ["share/icons/hicolor/64x64/apps/manahost.png"]
+"share/icons/hicolor/128x128/apps" = ["share/icons/hicolor/128x128/apps/manahost.png"]
+"share/icons/hicolor/256x256/apps" = ["share/icons/hicolor/256x256/apps/manahost.png"]
+
 [tool.setuptools.dynamic]
 version = { attr = "manahost.__version__" }

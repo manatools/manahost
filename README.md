@@ -41,8 +41,12 @@ After installation, the command becomes:
 ```bash
 manahost --logging
 ```
+
+Installed desktop integration files:
+- `share/applications/manahost.desktop`
+- `share/icons/hicolor/*/apps/manahost.png`
+- `share/icons/hicolor/scalable/apps/manahost.svg`
 ## Notes
 
 The app is D-Bus only: all reads and writes use `org.freedesktop.hostname1`
 directly, and startup/save fail explicitly if D-Bus support is unavailable.
-
