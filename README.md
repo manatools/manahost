@@ -14,6 +14,26 @@ exposed by the `org.freedesktop.hostname1` D-Bus interface.
 - logging
 - provides a ManaTools `HelpDialog` with field explanations and tooltips on fields
 
+## Requirements
+
+`manahost` is a Python application built on top of the ManaTools UI framework.
+For a normal runtime installation, the following requirements apply:
+
+- Python: 3.9 or newer
+- `python-manatools`: 0.99.3 or newer
+- `dbus-python`
+- `python-gettext`
+- `PyYAML`
+- a working D-Bus service exposing `org.freedesktop.hostname1` (typically
+  `systemd-hostnamed` on systemd-based systems)
+
+For packaging or source-based distribution builds, the project also expects the
+usual build-time tooling for Python packages and gettext catalogs:
+
+- `setuptools` / `wheel` (project uses `pyproject.toml`)
+- `gettext` tools (`msgfmt`, `msgmerge`) so .po files can be compiled into .mo
+  files before packaging
+
 <br clear="right"/>
 
 ## Screenshots
