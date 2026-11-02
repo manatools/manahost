@@ -157,9 +157,8 @@ class HostnameDialog(basedialog.BaseDialog):
 
         label_column = self.factory.createMinSize(row, self._LABEL_COLUMN_WIDTH, 1)
         label_column.setWeight(basedialog.yui.YUIDimension.YD_HORIZ, 30)
-        label_align = self.factory.createLeft(label_column)
         label_value = f"{label_text}:" if label_text else ""
-        self.factory.createLabel(label_align, label_value)
+        self.factory.createLabel(label_column, label_value)
 
         self.factory.createHSpacing(row, 8)
 
