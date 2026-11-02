@@ -18,6 +18,7 @@ test -d "$POT_DIR"
 
 POT_FILE="$POT_DIR/$DOMAIN.pot"
 PY_SOURCES="$(find manahost -type f -name '*.py' | sort)"
+DESKTOP_FILE="share/applications/.org.mageia.manahost.desktop"
 
 if test -z "$PY_SOURCES"; then
 	echo "No Python sources found under manahost/"
@@ -32,6 +33,18 @@ fi
 	--add-comments=I18N \
 	--output="$POT_FILE" \
 	$PY_SOURCES
+
+if test -f "$DESKTOP_FILE"; then
+	/usr/bin/xgettext \
+		--join-existing \
+		--package-name "$DOMAIN" \
+		--package-version "$VERSION" \
+		--language=Desktop --from-code=UTF-8 \
+		--keyword=Name --keyword=Comment \
+		--no-escape --add-location --sort-by-file \
+		--output="$POT_FILE" \
+		"$DESKTOP_FILE"
+fi
 
 /bin/sed --in-place --expression="s/charset=CHARSET/charset=UTF-8/" "$POT_FILE"
 /bin/sed --in-place --expression="s|$PWD/||g" "$POT_FILE"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: manahost 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-01 19:44+0100\n"
+"POT-Creation-Date: 2026-11-02 15:02+0100\n"
 "PO-Revision-Date: 2026-10-31 23:26+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: manahost/__init__.py:15
-msgid "ManaTools Hostname control"
-msgstr "Controllo hostname di ManaTools"
+#: manahost/__init__.py:27
+msgid "ManaTools manahost"
+msgstr "ManaTools manahost"
 
-#: manahost/__init__.py:18
+#: manahost/__init__.py:30
 msgid ""
 "Graphical hostname control tool using org.freedesktop.hostname1 with a "
 "backend-independent ManaTools Abstract User Interface."
@@ -31,176 +31,191 @@ msgstr ""
 "org.freedesktop.hostname1 con una interfaccia utente astratta di manatools "
 "indipendente dal backend."
 
-#: manahost/__init__.py:23
+#: manahost/__init__.py:35
 msgid "Manage the system hostname through the systemd hostname1 API."
 msgstr "Gestisce l'hostname di sistema tramite l'API systemd hostname1."
 
-#: manahost/app.py:87
+#: manahost/app.py:99
 msgid "Developers"
 msgstr "Sviluppatori"
 
-#: manahost/app.py:93
+#: manahost/app.py:105
 msgid "Project Links"
 msgstr "Collegamenti progetto"
 
-#: manahost/app.py:100
+#: manahost/app.py:112
 msgid "Runtime"
 msgstr "Ambiente di esecuzione"
 
-#: manahost/app.py:128
+#: manahost/app.py:140
 msgid "Enable application logging on the console."
 msgstr "Abilita il logging dell'applicazione sulla console."
 
-#: manahost/app.py:129
+#: manahost/app.py:141
 msgid "Write log entries to PATHNAME instead of the console."
 msgstr "Scrive i messaggi di log in PATHNAME invece che sulla console."
 
-#: manahost/app.py:130
+#: manahost/app.py:142
 msgid "Enable debug logging output."
 msgstr "Abilita l'output di logging di debug."
 
-#: manahost/dialog.py:25
+#: manahost/dialog.py:36
 msgid "Transient hostname for the current running system."
 msgstr "Nome host transitorio del sistema attualmente in esecuzione."
 
-#: manahost/dialog.py:26
+#: manahost/dialog.py:37
 msgid "Persistent hostname stored on disk and used at boot."
 msgstr "Nome host persistente memorizzato su disco e usato all'avvio."
 
-#: manahost/dialog.py:27
+#: manahost/dialog.py:38
 msgid "Human-friendly hostname used in desktop and shell views."
 msgstr "Nome host leggibile usato nelle viste del desktop e della shell."
 
-#: manahost/dialog.py:28
+#: manahost/dialog.py:39
 msgid "Desktop icon name representing the machine class."
 msgstr "Nome dell'icona desktop che rappresenta la classe della macchina."
 
-#: manahost/dialog.py:29
+#: manahost/dialog.py:40
 msgid "Hardware chassis type (desktop, laptop, vm, server, etc.)."
 msgstr "Tipo di chassis hardware (desktop, laptop, VM, server, ecc.)."
 
-#: manahost/dialog.py:51
+#: manahost/dialog.py:62
 msgid "System hostname"
 msgstr "Hostname di sistema"
 
-#: manahost/dialog.py:52
+#: manahost/dialog.py:63
 msgid "Hostname"
 msgstr "Hostname"
 
-#: manahost/dialog.py:53
+#: manahost/dialog.py:64
 msgid "Static hostname"
 msgstr "Hostname statico"
 
-#: manahost/dialog.py:54
+#: manahost/dialog.py:65
 msgid "Pretty hostname"
 msgstr "Hostname leggibile"
 
-#: manahost/dialog.py:55
+#: manahost/dialog.py:66
 msgid "Icon name"
 msgstr "Nome icona"
 
-#: manahost/dialog.py:56
+#: manahost/dialog.py:67
 msgid "Chassis"
 msgstr "Chassis"
 
-#: manahost/dialog.py:59
+#: manahost/dialog.py:70
 msgid "System information"
 msgstr "Informazioni di sistema"
 
-#: manahost/dialog.py:60
+#: manahost/dialog.py:71
 msgid "Kernel"
 msgstr "Kernel"
 
-#: manahost/dialog.py:61
+#: manahost/dialog.py:72
 msgid "Operating system"
 msgstr "Sistema operativo"
 
-#: manahost/dialog.py:62
+#: manahost/dialog.py:73
 msgid "Hardware vendor"
 msgstr "Produttore hardware"
 
-#: manahost/dialog.py:63
+#: manahost/dialog.py:74
 msgid "Hardware model"
 msgstr "Modello hardware"
 
-#: manahost/dialog.py:64
+#: manahost/dialog.py:75
 msgid "Hardware SKU"
 msgstr "SKU hardware"
 
-#: manahost/dialog.py:65
+#: manahost/dialog.py:76
 msgid "Hardware version"
 msgstr "Versione hardware"
 
-#: manahost/dialog.py:66
+#: manahost/dialog.py:77
 msgid "Firmware version"
 msgstr "Versione firmware"
 
-#: manahost/dialog.py:67
+#: manahost/dialog.py:78
 msgid "Firmware date"
 msgstr "Data firmware"
 
-#: manahost/dialog.py:68
+#: manahost/dialog.py:79
 msgid "Machine ID"
 msgstr "ID macchina"
 
-#: manahost/dialog.py:69
+#: manahost/dialog.py:80
 msgid "Boot ID"
 msgstr "ID avvio"
 
-#: manahost/dialog.py:74
+#: manahost/dialog.py:85
 msgid "&Help"
 msgstr "&Aiuto"
 
-#: manahost/dialog.py:75
+#: manahost/dialog.py:86
 msgid "Open help with field descriptions and usage notes."
 msgstr "Apri la guida con descrizioni dei campi e note d'uso."
 
-#: manahost/dialog.py:78
+#: manahost/dialog.py:89
 msgid "&About"
 msgstr "&Informazioni"
 
-#: manahost/dialog.py:79
+#: manahost/dialog.py:90
 msgid "Show application information, version and credits."
 msgstr "Mostra informazioni sull'applicazione, la versione e i crediti."
 
-#: manahost/dialog.py:82
+#: manahost/dialog.py:93
 msgid "&Save"
 msgstr "&Salva"
 
-#: manahost/dialog.py:84
+#: manahost/dialog.py:95
 msgid "Save modified hostname values to the system."
 msgstr "Salva i valori modificati dell'hostname nel sistema."
 
-#: manahost/dialog.py:87
+#: manahost/dialog.py:98
 msgid "&Close"
 msgstr "&Chiudi"
 
-#: manahost/dialog.py:88
+#: manahost/dialog.py:99
 msgid "Close this dialog without applying new changes."
 msgstr "Chiudi questa finestra senza applicare le nuove modifiche."
 
-#: manahost/dialog.py:171
+#: manahost/dialog.py:185
 msgid "Allow editing chassis manually"
 msgstr "Consenti modifica manuale del chassis"
 
-#: manahost/dialog.py:175
+#: manahost/dialog.py:189
 msgid "Enable only if automatic chassis detection is missing or incorrect."
 msgstr ""
 "Abilita solo se il rilevamento automatico del chassis è assente o errato."
 
-#: manahost/dialog.py:219
+#: manahost/dialog.py:233
 msgid "Preview"
 msgstr "Anteprima"
 
-#: manahost/dialog.py:222
+#: manahost/dialog.py:236
 msgid "Preview of the icon selected in Icon name."
 msgstr "Anteprima dell'icona selezionata nel campo Nome icona."
 
-#: manahost/dialog.py:283
+#: manahost/dialog.py:297
+msgid "Invalid input"
+msgstr "Input non valido"
+
+#: manahost/dialog.py:298
+#, python-format
+msgid ""
+"One or more fields contain invalid values.\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Uno o più campi contengono valori non validi.\n"
+"\n"
+"Dettagli: %s"
+
+#: manahost/dialog.py:303
 msgid "Save failed"
 msgstr "Salvataggio non riuscito"
 
-#: manahost/dialog.py:284
+#: manahost/dialog.py:304
 #, python-format
 msgid ""
 "Unable to save hostname values through D-Bus.\n"
@@ -211,11 +226,11 @@ msgstr ""
 "\n"
 "Dettagli: %s"
 
-#: manahost/dialog.py:294
+#: manahost/dialog.py:314
 msgid "Reload failed"
 msgstr "Ricaricamento non riuscito"
 
-#: manahost/dialog.py:295
+#: manahost/dialog.py:315
 #, python-format
 msgid ""
 "Changes were sent, but reloading current system values failed.\n"
@@ -227,23 +242,23 @@ msgstr ""
 "\n"
 "Dettagli: %s"
 
-#: manahost/helpinfo.py:15
+#: manahost/helpinfo.py:26
 msgid "Go to index"
 msgstr "Vai all'indice"
 
-#: manahost/helpinfo.py:16 manahost/helpinfo.py:34
+#: manahost/helpinfo.py:27 manahost/helpinfo.py:45
 msgid "Editable fields"
 msgstr "Campi modificabili"
 
-#: manahost/helpinfo.py:17 manahost/helpinfo.py:55
+#: manahost/helpinfo.py:28 manahost/helpinfo.py:66
 msgid "Chassis field policy"
 msgstr "Politica del campo Chassis"
 
-#: manahost/helpinfo.py:18 manahost/helpinfo.py:65
+#: manahost/helpinfo.py:29 manahost/helpinfo.py:76
 msgid "Applying changes"
 msgstr "Applicazione delle modifiche"
 
-#: manahost/helpinfo.py:28
+#: manahost/helpinfo.py:39
 msgid ""
 "This tool reads and writes hostname information through "
 "org.freedesktop.hostname1 on D-Bus."
@@ -251,7 +266,7 @@ msgstr ""
 "Questo strumento legge e scrive le informazioni sull'hostname tramite "
 "org.freedesktop.hostname1 su D-Bus."
 
-#: manahost/helpinfo.py:36
+#: manahost/helpinfo.py:47
 msgid ""
 "<ul><li><b>Hostname</b>: transient runtime hostname. This property is the "
 "actual hostname configured in the kernel.<br>It can be different from the "
@@ -308,7 +323,7 @@ msgstr ""
 "questa proprietà a stringa vuota per riabilitare il rilevamento automatico "
 "del tipo di chassis dalle informazioni del firmware.</li></ul>"
 
-#: manahost/helpinfo.py:57
+#: manahost/helpinfo.py:68
 msgid ""
 "Chassis is usually auto-detected correctly by the system. For safety, manual "
 "editing is disabled by default when a value already exists. If chassis is "
@@ -319,7 +334,7 @@ msgstr ""
 "quando esiste già un valore. Se il chassis è vuoto, la modifica manuale è "
 "abilitata per impostazione predefinita tramite la checkbox dedicata."
 
-#: manahost/helpinfo.py:67
+#: manahost/helpinfo.py:78
 msgid ""
 "After pressing Save, changes are sent through D-Bus and the dialog reloads "
 "values from the running system to show the effective state."
@@ -332,13 +347,12 @@ msgstr ""
 #~ msgstr "<h3>Sviluppatori</h3><ul><li>Angelo Naselli</li></ul>"
 
 #~ msgid ""
-#~ "<h3>Project Links</h3><ul><li><b>manahost:</b> manahost "
-#~ "on github</li><li><b>python-manatools:</b> python-manatools on github</"
-#~ "li></ul>"
+#~ "<h3>Project Links</h3><ul><li><b>manahost:</b> manahost on github</"
+#~ "li><li><b>python-manatools:</b> python-manatools on github</li></ul>"
 #~ msgstr ""
-#~ "<h3>Collegamenti progetto</h3><ul><li><b>manahost:</b> "
-#~ "manahost su github</li><li><b>python-manatools:</b> python-"
-#~ "manatools su github</li></ul>"
+#~ "<h3>Collegamenti progetto</h3><ul><li><b>manahost:</b> manahost su "
+#~ "github</li><li><b>python-manatools:</b> python-manatools su github</li></"
+#~ "ul>"
 
 #~ msgid "<h3>Runtime</h3><ul>"
 #~ msgstr "<h3>Ambiente di esecuzione</h3><ul>"
@@ -350,12 +364,21 @@ msgstr ""
 #~ "Strumento grafico di controllo dell'hostname che usa "
 #~ "org.freedesktop.hostname1 con una AUI ManaTools indipendente dal backend."
 
+#~ msgid "ManaTools Hostname control"
+#~ msgstr "Controllo hostname di ManaTools"
+
+#~ msgid "Manage system hostname and machine metadata"
+#~ msgstr "Gestisce l'hostname di sistema e i metadati della macchina"
+
 #~ msgid "Manatools Hostname control"
 #~ msgstr "Controllo hostname di ManaTools"
 
 #~ msgid "directory containing localization strings (developer only)"
 #~ msgstr ""
 #~ "directory contenente le stringhe di localizzazione (solo sviluppatori)"
+
+#~ msgid "hostname;systemd;dbus;manatools;"
+#~ msgstr "hostname;systemd;dbus;manatools;"
 
 #~ msgid "options"
 #~ msgstr "opzioni"
