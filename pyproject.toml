@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manahost"
+dynamic = ["version"]
+description = "ManaTools hostname control dialog for org.freedesktop.hostname1"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "GPL-3-or-later" }
+authors = [
+  { name = "Angelo Naselli", email = "anaselli@linux.it" },
+]
+keywords = ["manatools", "systemd", "hostname", "dbus", "ui"]
+dependencies = [
+  "dbus-python",
+]
+
+[project.scripts]
+manahost = "manahost.app:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["manahost*"]
+
+[tool.setuptools.package-data]
+manahost = ["resources/*.svg"]
+
+[tool.setuptools.dynamic]
+version = { attr = "manahost.__version__" }

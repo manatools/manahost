@@ -1,0 +1,280 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the manahost package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: manahost 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-01 19:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: manahost/__init__.py:15
+msgid "ManaTools Hostname control"
+msgstr ""
+
+#: manahost/__init__.py:18
+msgid ""
+"Graphical hostname control tool using org.freedesktop.hostname1 with a "
+"backend-independent ManaTools Abstract User Interface."
+msgstr ""
+
+#: manahost/__init__.py:23
+msgid "Manage the system hostname through the systemd hostname1 API."
+msgstr ""
+
+#: manahost/app.py:87
+msgid "Developers"
+msgstr ""
+
+#: manahost/app.py:93
+msgid "Project Links"
+msgstr ""
+
+#: manahost/app.py:100
+msgid "Runtime"
+msgstr ""
+
+#: manahost/app.py:128
+msgid "Enable application logging on the console."
+msgstr ""
+
+#: manahost/app.py:129
+msgid "Write log entries to PATHNAME instead of the console."
+msgstr ""
+
+#: manahost/app.py:130
+msgid "Enable debug logging output."
+msgstr ""
+
+#: manahost/dialog.py:25
+msgid "Transient hostname for the current running system."
+msgstr ""
+
+#: manahost/dialog.py:26
+msgid "Persistent hostname stored on disk and used at boot."
+msgstr ""
+
+#: manahost/dialog.py:27
+msgid "Human-friendly hostname used in desktop and shell views."
+msgstr ""
+
+#: manahost/dialog.py:28
+msgid "Desktop icon name representing the machine class."
+msgstr ""
+
+#: manahost/dialog.py:29
+msgid "Hardware chassis type (desktop, laptop, vm, server, etc.)."
+msgstr ""
+
+#: manahost/dialog.py:51
+msgid "System hostname"
+msgstr ""
+
+#: manahost/dialog.py:52
+msgid "Hostname"
+msgstr ""
+
+#: manahost/dialog.py:53
+msgid "Static hostname"
+msgstr ""
+
+#: manahost/dialog.py:54
+msgid "Pretty hostname"
+msgstr ""
+
+#: manahost/dialog.py:55
+msgid "Icon name"
+msgstr ""
+
+#: manahost/dialog.py:56
+msgid "Chassis"
+msgstr ""
+
+#: manahost/dialog.py:59
+msgid "System information"
+msgstr ""
+
+#: manahost/dialog.py:60
+msgid "Kernel"
+msgstr ""
+
+#: manahost/dialog.py:61
+msgid "Operating system"
+msgstr ""
+
+#: manahost/dialog.py:62
+msgid "Hardware vendor"
+msgstr ""
+
+#: manahost/dialog.py:63
+msgid "Hardware model"
+msgstr ""
+
+#: manahost/dialog.py:64
+msgid "Hardware SKU"
+msgstr ""
+
+#: manahost/dialog.py:65
+msgid "Hardware version"
+msgstr ""
+
+#: manahost/dialog.py:66
+msgid "Firmware version"
+msgstr ""
+
+#: manahost/dialog.py:67
+msgid "Firmware date"
+msgstr ""
+
+#: manahost/dialog.py:68
+msgid "Machine ID"
+msgstr ""
+
+#: manahost/dialog.py:69
+msgid "Boot ID"
+msgstr ""
+
+#: manahost/dialog.py:74
+msgid "&Help"
+msgstr ""
+
+#: manahost/dialog.py:75
+msgid "Open help with field descriptions and usage notes."
+msgstr ""
+
+#: manahost/dialog.py:78
+msgid "&About"
+msgstr ""
+
+#: manahost/dialog.py:79
+msgid "Show application information, version and credits."
+msgstr ""
+
+#: manahost/dialog.py:82
+msgid "&Save"
+msgstr ""
+
+#: manahost/dialog.py:84
+msgid "Save modified hostname values to the system."
+msgstr ""
+
+#: manahost/dialog.py:87
+msgid "&Close"
+msgstr ""
+
+#: manahost/dialog.py:88
+msgid "Close this dialog without applying new changes."
+msgstr ""
+
+#: manahost/dialog.py:171
+msgid "Allow editing chassis manually"
+msgstr ""
+
+#: manahost/dialog.py:175
+msgid "Enable only if automatic chassis detection is missing or incorrect."
+msgstr ""
+
+#: manahost/dialog.py:219
+msgid "Preview"
+msgstr ""
+
+#: manahost/dialog.py:222
+msgid "Preview of the icon selected in Icon name."
+msgstr ""
+
+#: manahost/dialog.py:283
+msgid "Save failed"
+msgstr ""
+
+#: manahost/dialog.py:284
+#, python-format
+msgid ""
+"Unable to save hostname values through D-Bus.\n"
+"\n"
+"Details: %s"
+msgstr ""
+
+#: manahost/dialog.py:294
+msgid "Reload failed"
+msgstr ""
+
+#: manahost/dialog.py:295
+#, python-format
+msgid ""
+"Changes were sent, but reloading current system values failed.\n"
+"\n"
+"Details: %s"
+msgstr ""
+
+#: manahost/helpinfo.py:15
+msgid "Go to index"
+msgstr ""
+
+#: manahost/helpinfo.py:16 manahost/helpinfo.py:34
+msgid "Editable fields"
+msgstr ""
+
+#: manahost/helpinfo.py:17 manahost/helpinfo.py:55
+msgid "Chassis field policy"
+msgstr ""
+
+#: manahost/helpinfo.py:18 manahost/helpinfo.py:65
+msgid "Applying changes"
+msgstr ""
+
+#: manahost/helpinfo.py:28
+msgid ""
+"This tool reads and writes hostname information through "
+"org.freedesktop.hostname1 on D-Bus."
+msgstr ""
+
+#: manahost/helpinfo.py:36
+msgid ""
+"<ul><li><b>Hostname</b>: transient runtime hostname. This property is the "
+"actual hostname configured in the kernel.<br>It can be different from the "
+"static hostname. This property is never empty.</li><li><b>Static hostname</"
+"b>: persistent hostname saved on disk and configured in /etc/hostname.</"
+"li><li><b>Pretty hostname</b>: user-friendly display name. This property "
+"exposes the pretty hostname which is a free-form UTF-8 hostname for "
+"presentation to the user.<br>User interfaces should ensure that the pretty "
+"hostname and the static hostname stay in sync. E.g. when the former is "
+"<i>Lennart’s Computer</i> the latter should be <i>lennarts-computer</i>.</"
+"li><li><b>Icon name</b>: desktop icon identifier for the machine. This "
+"property exposes the icon name following the XDG icon naming specification."
+"<br>If not set, information such as the chassis type (see below) is used to "
+"find a suitable fallback icon name (i.e. <i>computer-laptop</i> vs. "
+"<i>computer-desktop</i> is picked based on the chassis information). If no "
+"such data is available, the empty string is returned.<br>In that case an "
+"application should fall back to a replacement icon, for example <i>computer</"
+"i>.<br>If this property is set to the empty string, the automatic fallback "
+"name selection is enabled again.</li><li><b>Chassis</b>: hardware type "
+"(desktop, laptop, vm, server, etc.). This property exposes a chassis type, "
+"one of the currently defined chassis types.<br>Note that in most cases the "
+"chassis type will be determined automatically from DMI/SMBIOS/ACPI firmware "
+"information.<br>Writing to this setting is hence useful only to override "
+"misdetected chassis types, or to configure the chassis type if it could not "
+"be auto-detected.<br>Set this property to the empty string to reenable the "
+"automatic detection of the chassis type from firmware information.</li></ul>"
+msgstr ""
+
+#: manahost/helpinfo.py:57
+msgid ""
+"Chassis is usually auto-detected correctly by the system. For safety, manual "
+"editing is disabled by default when a value already exists. If chassis is "
+"empty, manual editing is enabled by default through the dedicated checkbox."
+msgstr ""
+
+#: manahost/helpinfo.py:67
+msgid ""
+"After pressing Save, changes are sent through D-Bus and the dialog reloads "
+"values from the running system to show the effective state."
+msgstr ""
