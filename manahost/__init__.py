@@ -21,7 +21,7 @@ def N_(message):
 
 
 APP_NAME = "manahost"
-__version__ = "0.1.0"
+__version__ = "1.0.0"
 APP_ICON_NAME = APP_NAME
 APP_ICON_PATH = str(Path(__file__).resolve().parent / "resources" / "manahost.svg")
 APP_DISPLAY_NAME = N_("manahost - ManaTools hostname control")
