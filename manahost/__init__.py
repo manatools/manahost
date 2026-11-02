@@ -24,8 +24,8 @@ APP_NAME = "manahost"
 __version__ = "0.1.0"
 APP_ICON_NAME = APP_NAME
 APP_ICON_PATH = str(Path(__file__).resolve().parent / "resources" / "manahost.svg")
-APP_DISPLAY_NAME = N_("ManaTools Hostname control")
-APP_LICENSE = "LGPL-2.1-or-later"
+APP_DISPLAY_NAME = N_("manahost - ManaTools hostname control")
+APP_LICENSE = "GPL-3-or-later"
 APP_DESCRIPTION = (
     N_("Graphical hostname control tool using org.freedesktop.hostname1 "
     "with a backend-independent ManaTools Abstract User Interface."

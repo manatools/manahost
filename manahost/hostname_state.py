@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 # vim: set fileencoding=utf-8 :
 # vim: set et ts=4 sw=4:
 '''
@@ -9,13 +11,11 @@ Author:  Angelo Naselli <anaselli@linux.it>
 
 @package manahost
 '''
-
 """Helpers to read and write hostname information through systemd's hostname1 API."""
-
-from __future__ import annotations
 
 import datetime
 import logging
+import re
 from dataclasses import dataclass, field
 
 logger = logging.getLogger("manahost.hostname_state")
@@ -89,6 +89,7 @@ class HostnameStatus:
     machine_id: str = ""
     boot_id: str = ""
     source: str = "unavailable"
+    _writable_fields_cache: set[str] | None = field(default=None, init=False, repr=False)
     editable_fields: dict = field(default_factory=lambda: {
         "hostname": "hostname",
         "static_hostname": "static_hostname",
@@ -118,8 +119,12 @@ class HostnameStatus:
         the expected user experience: the dialog remains usable and any real
         write failure is reported through the save path with a logged exception.
         """
+        if self._writable_fields_cache is not None:
+            return set(self._writable_fields_cache)
+
         supported = set(self.editable_fields)
         if dbus is None:
+            self._writable_fields_cache = set(supported)
             return supported
 
         try:
@@ -142,11 +147,15 @@ class HostnameStatus:
                     allowed.add(field_name)
             if not allowed:
                 logger.warning("hostname1 introspection did not expose writable methods; keeping supported fields editable")
+                self._writable_fields_cache = set(supported)
                 return supported
             logger.debug("Detected writable hostname fields: %s", sorted(allowed))
-            return supported & allowed
+            result = supported & allowed
+            self._writable_fields_cache = set(result)
+            return result
         except Exception:
             logger.exception("Could not introspect hostname1 writable methods; keeping fields editable")
+            self._writable_fields_cache = set(supported)
             return supported
 
     @classmethod
@@ -220,6 +229,31 @@ class HostnameStatus:
             if key in writable
         }
 
+    @classmethod
+    def field_max_length(cls, field_name: str) -> int:
+        """Return the max accepted input length for an editable field."""
+        return cls.FIELD_MAX_LENGTHS.get(field_name, cls.DBUS_STRING_HARD_LIMIT)
+
+    @classmethod
+    def _validate_value(cls, key: str, value: str) -> str:
+        """Validate one user-provided editable value before sending it to D-Bus."""
+        text = str(value)
+        max_length = cls.field_max_length(key)
+        if len(text) > max_length:
+            raise ValueError(f"Field '{key}' exceeds maximum length ({max_length})")
+        if "\x00" in text:
+            raise ValueError(f"Field '{key}' contains an invalid NUL character")
+        if key in {"hostname", "static_hostname"}:
+            if text and len(text) > cls.HOSTNAME_MAX_LENGTH:
+                raise ValueError(
+                    f"Field '{key}' must be at most {cls.HOSTNAME_MAX_LENGTH} characters long"
+                )
+            if text and not cls._HOSTNAME_PATTERN.match(text):
+                raise ValueError(
+                    f"Field '{key}' must contain only lowercase ASCII letters, digits and '-'"
+                )
+        return text
+
     def save(self, values):
         """Persist a dictionary of modified values using systemd hostname1 methods."""
         if not values:
@@ -228,8 +262,13 @@ class HostnameStatus:
             logger.error("python-dbus is not available: hostname values cannot be saved")
             raise RuntimeError("python-dbus is required to save hostname metadata")
 
+        sanitized = {
+            key: self._validate_value(key, value)
+            for key, value in values.items()
+        }
+
         writable = self.writable_fields()
-        blocked = sorted(key for key in values if key not in writable)
+        blocked = sorted(key for key in sanitized if key not in writable)
         if blocked:
             logger.warning("Requested hostname writes are not supported on this system: %s", blocked)
             raise PermissionError(f"Write access to the following hostname fields is not available: {', '.join(blocked)}")
@@ -238,7 +277,7 @@ class HostnameStatus:
             bus = dbus.SystemBus()
             proxy = bus.get_object("org.freedesktop.hostname1", "/org/freedesktop/hostname1")
             hostname_if = dbus.Interface(proxy, "org.freedesktop.hostname1")
-            for key, value in values.items():
+            for key, value in sanitized.items():
                 method_name = {
                     "hostname": "SetHostname",
                     "static_hostname": "SetStaticHostname",
@@ -256,3 +295,15 @@ class HostnameStatus:
         except Exception as exc:
             logger.exception("D-Bus save failed")
             raise RuntimeError(f"Unable to save hostname metadata through D-Bus: {exc}") from exc
+    HOSTNAME_MAX_LENGTH = 63
+    DBUS_STRING_HARD_LIMIT = 4096
+    FIELD_MAX_LENGTHS = {
+        "hostname": HOSTNAME_MAX_LENGTH,
+        "static_hostname": HOSTNAME_MAX_LENGTH,
+        "pretty_hostname": DBUS_STRING_HARD_LIMIT,
+        "icon_name": DBUS_STRING_HARD_LIMIT,
+        "chassis": DBUS_STRING_HARD_LIMIT,
+        "deployment": DBUS_STRING_HARD_LIMIT,
+        "location": DBUS_STRING_HARD_LIMIT,
+    }
+    _HOSTNAME_PATTERN = re.compile(r"^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$")

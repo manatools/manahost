@@ -116,6 +116,9 @@ class HostnameDialog(basedialog.BaseDialog):
                 field.setEnabled(True)
                 field.setStretchable(basedialog.yui.YUIDimension.YD_HORIZ, True)
                 field.setWeight(basedialog.yui.YUIDimension.YD_HORIZ, 1)
+                max_length = self._status.field_max_length(field_name)
+                if hasattr(field, "setInputMaxLength"):
+                    field.setInputMaxLength(max_length)
                 tooltip_text = self._TOOLTIPS.get(field_name)
                 if tooltip_text:
                     field.setHelpText(tooltip_text)
@@ -288,6 +291,12 @@ class HostnameDialog(basedialog.BaseDialog):
             self._reload_from_system()
             self._save_button.setEnabled(False)
             logger.info("Saved hostname changes: %s", changes)
+        except ValueError as exc:
+            logger.warning("Hostname input validation failed: %s", exc)
+            ui.warningMsgBox({
+                "title": _("Invalid input"),
+                "text": _("One or more fields contain invalid values.\n\nDetails: %s") % str(exc),
+            })
         except Exception as exc:
             logger.exception("Unexpected error while saving hostname changes")
             ui.warningMsgBox({

@@ -8,8 +8,10 @@ from manahost.hostname_state import HostnameStatus
 class FakeIntrospectable:
     def __init__(self, xml):
         self._xml = xml
+        self.calls = 0
 
     def Introspect(self):
+        self.calls += 1
         return self._xml
 
 
@@ -121,6 +123,37 @@ class HostnameStatusTests(unittest.TestCase):
             fake_hostname.calls,
             [("SetHostname", "gandalf", True), ("SetPrettyHostname", "Gandalf", True)],
         )
+
+    def test_save_rejects_too_long_hostname(self):
+        status = HostnameStatus()
+        too_long = "a" * (HostnameStatus.HOSTNAME_MAX_LENGTH + 1)
+        with mock.patch("manahost.hostname_state.dbus", object()):
+            with self.assertRaises(ValueError):
+                status.save({"hostname": too_long})
+
+    def test_save_rejects_invalid_hostname_characters(self):
+        status = HostnameStatus()
+        with mock.patch("manahost.hostname_state.dbus", object()):
+            with self.assertRaises(ValueError):
+                status.save({"hostname": "Bad Hostname"})
+
+    def test_writable_fields_are_cached_after_first_introspection(self):
+        introspectable = FakeIntrospectable(
+            "<node><interface name='org.freedesktop.hostname1'><method name='SetHostname' /></interface></node>"
+        )
+        fake_bus = FakeBus()
+
+        def fake_interface(proxy, iface):
+            if iface == "org.freedesktop.DBus.Introspectable":
+                return introspectable
+            raise AssertionError(f"Unsupported interface {iface}")
+
+        fake_dbus = SimpleNamespace(SystemBus=lambda: fake_bus, Interface=fake_interface)
+        with mock.patch("manahost.hostname_state.dbus", fake_dbus):
+            status = HostnameStatus()
+            self.assertEqual(status.writable_fields(), {"hostname"})
+            self.assertEqual(status.writable_fields(), {"hostname"})
+        self.assertEqual(introspectable.calls, 1)
 
 
 if __name__ == "__main__":
