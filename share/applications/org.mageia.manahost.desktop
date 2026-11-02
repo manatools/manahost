@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=ManaTools manahost
+Name[it]=ManaTools manahost
+Comment=Manage system hostname and machine metadata
+Comment[it]=Gestisce l'hostname di sistema e i metadati della macchina
+Exec=manahost
+Icon=org.mageia.manahost
+Terminal=false
+Categories=System;
+Keywords=hostname;systemd;dbus;manatools;
+StartupWMClass=org.mageia.manahost
