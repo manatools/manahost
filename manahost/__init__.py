@@ -1,3 +1,15 @@
+# vim: set fileencoding=utf-8 :
+# vim: set et ts=4 sw=4:
+'''
+manahost is a graphical hostname configuration tool based on ManaTools AUI python
+
+License: GPLv3
+
+Author:  Angelo Naselli <anaselli@linux.it>
+
+@package manahost
+'''
+
 """System hostname configuration tool for ManaTools."""
 
 from pathlib import Path
