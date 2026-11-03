@@ -12,6 +12,7 @@ Author:  Angelo Naselli <anaselli@linux.it>
 
 """System hostname configuration tool for ManaTools."""
 
+from importlib.metadata import PackageNotFoundError, metadata, version
 from pathlib import Path
 
 
@@ -20,8 +21,16 @@ def N_(message):
     return message
 
 
-APP_NAME = "manahost"
-__version__ = "1.0.0"
+PACKAGE_NAME = "manahost"
+
+# Version from pyproject.toml metadata if installed
+try:
+    __version__ = version(PACKAGE_NAME)
+except PackageNotFoundError:
+    # Fallback if not installed and run locally
+    __version__ = "1.0.0-loc"
+
+APP_NAME = PACKAGE_NAME
 APP_ICON_NAME = APP_NAME
 APP_ICON_PATH = str(Path(__file__).resolve().parent / "resources" / "manahost.svg")
 APP_DISPLAY_NAME = N_("manahost - ManaTools hostname control")
