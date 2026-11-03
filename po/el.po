@@ -1,0 +1,366 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the manahost package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Yuri Chornoivan <yurchor@ukr.net>, 2026
+# Dimitrios Glentadakis <dglent@free.fr>, 2026
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: manahost 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-02 15:02+0100\n"
+"PO-Revision-Date: 2026-11-02 17:41+0000\n"
+"Last-Translator: Dimitrios Glentadakis <dglent@free.fr>, 2026\n"
+"Language-Team: Greek (https://app.transifex.com/MageiaLinux/teams/9361/el/)\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: manahost/__init__.py:27
+msgid "ManaTools manahost"
+msgstr "ManaTools manahost"
+
+#: manahost/__init__.py:30
+msgid ""
+"Graphical hostname control tool using org.freedesktop.hostname1 with a "
+"backend-independent ManaTools Abstract User Interface."
+msgstr ""
+"Γραφικό εργαλείο ελέγχου του ονόματος υπολογιστή που χρησιμοποιεί το "
+"org.freedesktop.hostname1 με την αφαιρετική διεπαφή χρήστη του ManaTools, "
+"ανεξάρτητη από το σύστημα υποστήριξης."
+
+#: manahost/__init__.py:35
+msgid "Manage the system hostname through the systemd hostname1 API."
+msgstr ""
+"Διαχείριση του ονόματος υπολογιστή του συστήματος μέσω του API hostname1 του "
+"systemd."
+
+#: manahost/app.py:99
+msgid "Developers"
+msgstr "Δημιουργοί"
+
+#: manahost/app.py:105
+msgid "Project Links"
+msgstr "Σύνδεσμοι έργου"
+
+#: manahost/app.py:112
+msgid "Runtime"
+msgstr "Περιβάλλον εκτέλεσης"
+
+#: manahost/app.py:140
+msgid "Enable application logging on the console."
+msgstr "Ενεργοποίηση καταγραφής της εφαρμογής στην κονσόλα."
+
+#: manahost/app.py:141
+msgid "Write log entries to PATHNAME instead of the console."
+msgstr "Εγγραφή καταχωρίσεων καταγραφής στο PATHNAME αντί για την κονσόλα."
+
+#: manahost/app.py:142
+msgid "Enable debug logging output."
+msgstr "Ενεργοποίηση καταγραφής αποσφαλμάτωσης."
+
+#: manahost/dialog.py:36
+msgid "Transient hostname for the current running system."
+msgstr "Προσωρινό όνομα υπολογιστή για το σύστημα που εκτελείται."
+
+#: manahost/dialog.py:37
+msgid "Persistent hostname stored on disk and used at boot."
+msgstr ""
+"Μόνιμο όνομα υπολογιστή που αποθηκεύεται στον δίσκο και χρησιμοποιείται κατά "
+"την εκκίνηση."
+
+#: manahost/dialog.py:38
+msgid "Human-friendly hostname used in desktop and shell views."
+msgstr ""
+"Φιλικό προς τον χρήστη όνομα υπολογιστή που εμφανίζεται στο περιβάλλον "
+"εργασίας και στο κέλυφος."
+
+#: manahost/dialog.py:39
+msgid "Desktop icon name representing the machine class."
+msgstr ""
+"Όνομα εικονιδίου του περιβάλλοντος εργασίας που αντιπροσωπεύει την κατηγορία "
+"του υπολογιστή."
+
+#: manahost/dialog.py:40
+msgid "Hardware chassis type (desktop, laptop, vm, server, etc.)."
+msgstr ""
+"Τύπος συστήματος (επιτραπέζιος ή φορητός υπολογιστής, εικονική μηχανή, "
+"εξυπηρετητής κ.λπ.)."
+
+#: manahost/dialog.py:62
+msgid "System hostname"
+msgstr "Όνομα υπολογιστή συστήματος"
+
+#: manahost/dialog.py:63
+msgid "Hostname"
+msgstr "Όνομα υπολογιστή"
+
+#: manahost/dialog.py:64
+msgid "Static hostname"
+msgstr "Στατικό όνομα υπολογιστή"
+
+#: manahost/dialog.py:65
+msgid "Pretty hostname"
+msgstr "Φιλικό όνομα υπολογιστή"
+
+#: manahost/dialog.py:66
+msgid "Icon name"
+msgstr "Όνομα εικονιδίου"
+
+#: manahost/dialog.py:67
+msgid "Chassis"
+msgstr "Τύπος συστήματος"
+
+#: manahost/dialog.py:70
+msgid "System information"
+msgstr "Πληροφορίες συστήματος"
+
+#: manahost/dialog.py:71
+msgid "Kernel"
+msgstr "Πυρήνας"
+
+#: manahost/dialog.py:72
+msgid "Operating system"
+msgstr "Λειτουργικό σύστημα"
+
+#: manahost/dialog.py:73
+msgid "Hardware vendor"
+msgstr "Κατασκευαστής υλικού"
+
+#: manahost/dialog.py:74
+msgid "Hardware model"
+msgstr "Μοντέλο υλικού"
+
+#: manahost/dialog.py:75
+msgid "Hardware SKU"
+msgstr "Κωδικός SKU υλικού"
+
+#: manahost/dialog.py:76
+msgid "Hardware version"
+msgstr "Έκδοση υλικού"
+
+#: manahost/dialog.py:77
+msgid "Firmware version"
+msgstr "Έκδοση υλικολογισμικού"
+
+#: manahost/dialog.py:78
+msgid "Firmware date"
+msgstr "Ημερομηνία υλικολογισμικού"
+
+#: manahost/dialog.py:79
+msgid "Machine ID"
+msgstr "Αναγνωριστικό υπολογιστή"
+
+#: manahost/dialog.py:80
+msgid "Boot ID"
+msgstr "Αναγνωριστικό εκκίνησης"
+
+#: manahost/dialog.py:85
+msgid "&Help"
+msgstr "&Βοήθεια"
+
+#: manahost/dialog.py:86
+msgid "Open help with field descriptions and usage notes."
+msgstr "Άνοιγμα βοήθειας με περιγραφές πεδίων και σημειώσεις χρήσης."
+
+#: manahost/dialog.py:89
+msgid "&About"
+msgstr "&Σχετικά"
+
+#: manahost/dialog.py:90
+msgid "Show application information, version and credits."
+msgstr ""
+"Εμφάνιση πληροφοριών για την εφαρμογή, την έκδοση και τους συντελεστές."
+
+#: manahost/dialog.py:93
+msgid "&Save"
+msgstr "Απο&θήκευση"
+
+#: manahost/dialog.py:95
+msgid "Save modified hostname values to the system."
+msgstr "Αποθήκευση των τροποποιημένων τιμών ονόματος υπολογιστή στο σύστημα."
+
+#: manahost/dialog.py:98
+msgid "&Close"
+msgstr "&Κλείσιμο"
+
+#: manahost/dialog.py:99
+msgid "Close this dialog without applying new changes."
+msgstr "Κλείσιμο αυτού του διαλόγου χωρίς εφαρμογή νέων αλλαγών."
+
+#: manahost/dialog.py:185
+msgid "Allow editing chassis manually"
+msgstr "Να επιτρέπεται η χειροκίνητη επεξεργασία του τύπου συστήματος"
+
+#: manahost/dialog.py:189
+msgid "Enable only if automatic chassis detection is missing or incorrect."
+msgstr ""
+"Ενεργοποιήστε μόνο αν ο τύπος συστήματος δεν ανιχνεύεται αυτόματα ή "
+"ανιχνεύεται εσφαλμένα."
+
+#: manahost/dialog.py:233
+msgid "Preview"
+msgstr "Προεπισκόπηση"
+
+#: manahost/dialog.py:236
+msgid "Preview of the icon selected in Icon name."
+msgstr ""
+"Προεπισκόπηση του εικονιδίου που έχει επιλεγεί στο πεδίο «Όνομα εικονιδίου»."
+
+#: manahost/dialog.py:297
+msgid "Invalid input"
+msgstr "Μη έγκυρα δεδομένα εισόδου"
+
+#: manahost/dialog.py:298
+#, python-format
+msgid ""
+"One or more fields contain invalid values.\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Ένα ή περισσότερα πεδία περιέχουν μη έγκυρες τιμές.\n"
+"\n"
+"Λεπτομέρειες: %s"
+
+#: manahost/dialog.py:303
+msgid "Save failed"
+msgstr "Αποτυχία αποθήκευσης"
+
+#: manahost/dialog.py:304
+#, python-format
+msgid ""
+"Unable to save hostname values through D-Bus.\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Αδυναμία αποθήκευσης των τιμών ονόματος υπολογιστή μέσω D-Bus.\n"
+"\n"
+"Λεπτομέρειες: %s"
+
+#: manahost/dialog.py:314
+msgid "Reload failed"
+msgstr "Αποτυχία επαναφόρτωσης"
+
+#: manahost/dialog.py:315
+#, python-format
+msgid ""
+"Changes were sent, but reloading current system values failed.\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Οι αλλαγές στάλθηκαν, αλλά απέτυχε η επαναφόρτωση των τρεχουσών τιμών του "
+"συστήματος.\n"
+"\n"
+"Λεπτομέρειες: %s"
+
+#: manahost/helpinfo.py:26
+msgid "Go to index"
+msgstr "Μετάβαση στο ευρετήριο"
+
+#: manahost/helpinfo.py:27 manahost/helpinfo.py:45
+msgid "Editable fields"
+msgstr "Επεξεργάσιμα πεδία"
+
+#: manahost/helpinfo.py:28 manahost/helpinfo.py:66
+msgid "Chassis field policy"
+msgstr "Κανόνες για το πεδίο τύπου συστήματος"
+
+#: manahost/helpinfo.py:29 manahost/helpinfo.py:76
+msgid "Applying changes"
+msgstr "Εφαρμογή αλλαγών"
+
+#: manahost/helpinfo.py:39
+msgid ""
+"This tool reads and writes hostname information through "
+"org.freedesktop.hostname1 on D-Bus."
+msgstr ""
+"Αυτό το εργαλείο διαβάζει και γράφει πληροφορίες ονόματος υπολογιστή μέσω "
+"του org.freedesktop.hostname1 στο D-Bus."
+
+#: manahost/helpinfo.py:47
+msgid ""
+"<ul><li><b>Hostname</b>: transient runtime hostname. This property is the "
+"actual hostname configured in the kernel.<br>It can be different from the "
+"static hostname. This property is never empty.</li><li><b>Static hostname</"
+"b>: persistent hostname saved on disk and configured in /etc/hostname.</"
+"li><li><b>Pretty hostname</b>: user-friendly display name. This property "
+"exposes the pretty hostname which is a free-form UTF-8 hostname for "
+"presentation to the user.<br>User interfaces should ensure that the pretty "
+"hostname and the static hostname stay in sync. E.g. when the former is "
+"<i>Lennart’s Computer</i> the latter should be <i>lennarts-computer</i>.</"
+"li><li><b>Icon name</b>: desktop icon identifier for the machine. This "
+"property exposes the icon name following the XDG icon naming specification."
+"<br>If not set, information such as the chassis type (see below) is used to "
+"find a suitable fallback icon name (i.e. <i>computer-laptop</i> vs. "
+"<i>computer-desktop</i> is picked based on the chassis information). If no "
+"such data is available, the empty string is returned.<br>In that case an "
+"application should fall back to a replacement icon, for example <i>computer</"
+"i>.<br>If this property is set to the empty string, the automatic fallback "
+"name selection is enabled again.</li><li><b>Chassis</b>: hardware type "
+"(desktop, laptop, vm, server, etc.). This property exposes a chassis type, "
+"one of the currently defined chassis types.<br>Note that in most cases the "
+"chassis type will be determined automatically from DMI/SMBIOS/ACPI firmware "
+"information.<br>Writing to this setting is hence useful only to override "
+"misdetected chassis types, or to configure the chassis type if it could not "
+"be auto-detected.<br>Set this property to the empty string to reenable the "
+"automatic detection of the chassis type from firmware information.</li></ul>"
+msgstr ""
+"<ul><li><b>Όνομα υπολογιστή</b>: προσωρινό όνομα υπολογιστή κατά την "
+"εκτέλεση. Αυτή η ιδιότητα είναι το πραγματικό όνομα υπολογιστή που έχει "
+"οριστεί στον πυρήνα.<br>Μπορεί να διαφέρει από το στατικό όνομα υπολογιστή. "
+"Αυτή η ιδιότητα δεν είναι ποτέ κενή.</li><li><b>Στατικό όνομα υπολογιστή</"
+"b>: μόνιμο όνομα υπολογιστή που αποθηκεύεται στον δίσκο και ορίζεται στο /"
+"etc/hostname.</li><li><b>Φιλικό όνομα υπολογιστή</b>: εμφανιζόμενο όνομα, "
+"φιλικό προς τον χρήστη. Αυτή η ιδιότητα παρέχει το φιλικό όνομα υπολογιστή, "
+"δηλαδή ένα όνομα υπολογιστή σε UTF-8 ελεύθερης μορφής για εμφάνιση στον "
+"χρήστη.<br>Οι διεπαφές χρήστη πρέπει να διατηρούν συγχρονισμένα το φιλικό "
+"και το στατικό όνομα υπολογιστή. Π.χ. όταν το πρώτο είναι <i>Lennart’s "
+"Computer</i>, το δεύτερο πρέπει να είναι <i>lennarts-computer</i>.</"
+"li><li><b>Όνομα εικονιδίου</b>: αναγνωριστικό εικονιδίου του περιβάλλοντος "
+"εργασίας για τον υπολογιστή. Αυτή η ιδιότητα παρέχει το όνομα εικονιδίου "
+"σύμφωνα με την προδιαγραφή ονομασίας εικονιδίων XDG.<br>Αν δεν έχει οριστεί, "
+"χρησιμοποιούνται πληροφορίες όπως ο τύπος συστήματος (δείτε παρακάτω) για να "
+"βρεθεί ένα κατάλληλο εναλλακτικό όνομα εικονιδίου (δηλαδή επιλέγεται το "
+"<i>computer-laptop</i> ή το <i>computer-desktop</i> βάσει των πληροφοριών "
+"τύπου συστήματος). Αν δεν υπάρχουν τέτοια δεδομένα, επιστρέφεται κενή "
+"συμβολοσειρά.<br>Σε αυτή την περίπτωση, η εφαρμογή πρέπει να χρησιμοποιήσει "
+"ένα εναλλακτικό εικονίδιο, για παράδειγμα το <i>computer</i>.<br>Αν αυτή η "
+"ιδιότητα οριστεί σε κενή συμβολοσειρά, ενεργοποιείται ξανά η αυτόματη "
+"επιλογή εναλλακτικού ονόματος.</li><li><b>Τύπος συστήματος</b>: τύπος υλικού "
+"(επιτραπέζιος υπολογιστής, φορητός υπολογιστής, εικονική μηχανή, "
+"εξυπηρετητής κ.λπ.). Αυτή η ιδιότητα παρέχει έναν από τους καθορισμένους "
+"τύπους συστήματος.<br>Σημειώστε ότι στις περισσότερες περιπτώσεις ο τύπος "
+"συστήματος προσδιορίζεται αυτόματα από τις πληροφορίες DMI/SMBIOS/ACPI του "
+"υλικολογισμικού.<br>Επομένως, η εγγραφή σε αυτή τη ρύθμιση είναι χρήσιμη "
+"μόνο για την παράκαμψη εσφαλμένα ανιχνευμένων τύπων συστήματος ή για τον "
+"ορισμό του τύπου συστήματος αν δεν ήταν δυνατή η αυτόματη ανίχνευσή του."
+"<br>Ορίστε αυτή την ιδιότητα σε κενή συμβολοσειρά για να ενεργοποιήσετε ξανά "
+"την αυτόματη ανίχνευση του τύπου συστήματος από τις πληροφορίες του "
+"υλικολογισμικού.</li></ul>"
+
+#: manahost/helpinfo.py:68
+msgid ""
+"Chassis is usually auto-detected correctly by the system. For safety, manual "
+"editing is disabled by default when a value already exists. If chassis is "
+"empty, manual editing is enabled by default through the dedicated checkbox."
+msgstr ""
+"Ο τύπος συστήματος συνήθως ανιχνεύεται αυτόματα και σωστά από το σύστημα. "
+"Για λόγους ασφάλειας, η χειροκίνητη επεξεργασία είναι απενεργοποιημένη από "
+"προεπιλογή όταν υπάρχει ήδη τιμή. Αν το πεδίο τύπου συστήματος είναι κενό, η "
+"χειροκίνητη επεξεργασία είναι ενεργοποιημένη από προεπιλογή μέσω του ειδικού "
+"πλαισίου επιλογής."
+
+#: manahost/helpinfo.py:78
+msgid ""
+"After pressing Save, changes are sent through D-Bus and the dialog reloads "
+"values from the running system to show the effective state."
+msgstr ""
+"Αφού πατήσετε Αποθήκευση, οι αλλαγές στέλνονται μέσω D-Bus και ο διάλογος "
+"επαναφορτώνει τις τιμές από το σύστημα που εκτελείται, ώστε να εμφανιστεί η "
+"κατάσταση που ισχύει."
