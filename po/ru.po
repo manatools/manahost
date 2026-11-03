@@ -1,0 +1,360 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the manahost package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Yuri Chornoivan <yurchor@ukr.net>, 2026
+# AlexL <loginov.alex.valer@gmail.com>, 2026
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: manahost 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-02 15:02+0100\n"
+"PO-Revision-Date: 2026-11-02 17:41+0000\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2026\n"
+"Language-Team: Russian (https://app.transifex.com/MageiaLinux/teams/9361/"
+"ru/)\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: manahost/__init__.py:27
+msgid "ManaTools manahost"
+msgstr "manahost от ManaTools"
+
+#: manahost/__init__.py:30
+msgid ""
+"Graphical hostname control tool using org.freedesktop.hostname1 with a "
+"backend-independent ManaTools Abstract User Interface."
+msgstr ""
+"Графический инструмент для управления именем узла с помощью "
+"org.freedesktop.hostname1 с независимым от бэкенда интерфейсом "
+"абстрагирования ManaTools."
+
+#: manahost/__init__.py:35
+msgid "Manage the system hostname through the systemd hostname1 API."
+msgstr ""
+"Управление системным именем узла с помощью программного интерфейса hostname1 "
+"из systemd."
+
+#: manahost/app.py:99
+msgid "Developers"
+msgstr "Разработчики"
+
+#: manahost/app.py:105
+msgid "Project Links"
+msgstr "Ссылки на проект"
+
+#: manahost/app.py:112
+msgid "Runtime"
+msgstr "Время выполнения"
+
+#: manahost/app.py:140
+msgid "Enable application logging on the console."
+msgstr "Включить ведение журнала приложения в консоли."
+
+#: manahost/app.py:141
+msgid "Write log entries to PATHNAME instead of the console."
+msgstr "Записывать записи журнала в PATHNAME вместо консоли."
+
+#: manahost/app.py:142
+msgid "Enable debug logging output."
+msgstr "Включить отладочный вывод журнала."
+
+#: manahost/dialog.py:36
+msgid "Transient hostname for the current running system."
+msgstr "Временное имя узла для текущей запущенной системы."
+
+#: manahost/dialog.py:37
+msgid "Persistent hostname stored on disk and used at boot."
+msgstr ""
+"Постоянное имя узла, сохраняемое на диске и используемое при загрузке "
+"системы."
+
+#: manahost/dialog.py:38
+msgid "Human-friendly hostname used in desktop and shell views."
+msgstr ""
+"Понятное пользователю имя узла, используемое в окружении рабочего стола и "
+"консоли."
+
+#: manahost/dialog.py:39
+msgid "Desktop icon name representing the machine class."
+msgstr "Имя значка рабочего стола, соответствующее классу компьютера."
+
+#: manahost/dialog.py:40
+msgid "Hardware chassis type (desktop, laptop, vm, server, etc.)."
+msgstr ""
+"Тип аппаратного корпуса (десктоп, ноутбук, виртуальная машина, сервер и т. "
+"д.)."
+
+#: manahost/dialog.py:62
+msgid "System hostname"
+msgstr "Общесистемное имя узла"
+
+#: manahost/dialog.py:63
+msgid "Hostname"
+msgstr "Имя узла"
+
+#: manahost/dialog.py:64
+msgid "Static hostname"
+msgstr "Статичное имя узла"
+
+#: manahost/dialog.py:65
+msgid "Pretty hostname"
+msgstr "Понятное имя узла"
+
+#: manahost/dialog.py:66
+msgid "Icon name"
+msgstr "Имя значка"
+
+#: manahost/dialog.py:67
+msgid "Chassis"
+msgstr "Корпус"
+
+#: manahost/dialog.py:70
+msgid "System information"
+msgstr "Системная информация"
+
+#: manahost/dialog.py:71
+msgid "Kernel"
+msgstr "Ядро"
+
+#: manahost/dialog.py:72
+msgid "Operating system"
+msgstr "Операционная система"
+
+#: manahost/dialog.py:73
+msgid "Hardware vendor"
+msgstr "Производитель оборудования"
+
+#: manahost/dialog.py:74
+msgid "Hardware model"
+msgstr "Модель оборудования"
+
+#: manahost/dialog.py:75
+msgid "Hardware SKU"
+msgstr "SKU оборудования"
+
+#: manahost/dialog.py:76
+msgid "Hardware version"
+msgstr "Версия оборудования"
+
+#: manahost/dialog.py:77
+msgid "Firmware version"
+msgstr "Версия прошивки"
+
+#: manahost/dialog.py:78
+msgid "Firmware date"
+msgstr "Дата прошивки"
+
+#: manahost/dialog.py:79
+msgid "Machine ID"
+msgstr "ИД компьютера"
+
+#: manahost/dialog.py:80
+msgid "Boot ID"
+msgstr "ИД загрузки"
+
+#: manahost/dialog.py:85
+msgid "&Help"
+msgstr "&Справка"
+
+#: manahost/dialog.py:86
+msgid "Open help with field descriptions and usage notes."
+msgstr "Открыть справку с описанием полей и примечаниями по использованию."
+
+#: manahost/dialog.py:89
+msgid "&About"
+msgstr "&О программе"
+
+#: manahost/dialog.py:90
+msgid "Show application information, version and credits."
+msgstr "Показать информацию о приложении, версию и благодарности."
+
+#: manahost/dialog.py:93
+msgid "&Save"
+msgstr "&Сохранить"
+
+#: manahost/dialog.py:95
+msgid "Save modified hostname values to the system."
+msgstr "Сохранить в систему изменённые значения имени узла."
+
+#: manahost/dialog.py:98
+msgid "&Close"
+msgstr "Зак&рыть"
+
+#: manahost/dialog.py:99
+msgid "Close this dialog without applying new changes."
+msgstr "Закрыть это окно без применения новых изменений."
+
+#: manahost/dialog.py:185
+msgid "Allow editing chassis manually"
+msgstr "Разрешить редактирование корпуса вручную"
+
+#: manahost/dialog.py:189
+msgid "Enable only if automatic chassis detection is missing or incorrect."
+msgstr ""
+"Включайте только в том случае, если автоматическое определение корпуса "
+"отсутствует или работает некорректно."
+
+#: manahost/dialog.py:233
+msgid "Preview"
+msgstr "Предпросмотр"
+
+#: manahost/dialog.py:236
+msgid "Preview of the icon selected in Icon name."
+msgstr "Предпросмотр значка, выбранного в поле «Имя значка»."
+
+#: manahost/dialog.py:297
+msgid "Invalid input"
+msgstr "Некорректные входные данные"
+
+#: manahost/dialog.py:298
+#, python-format
+msgid ""
+"One or more fields contain invalid values.\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Одно или несколько полей содержат некорректные значения.\n"
+"\n"
+"Подробности: %s"
+
+#: manahost/dialog.py:303
+msgid "Save failed"
+msgstr "Ошибка сохранения"
+
+#: manahost/dialog.py:304
+#, python-format
+msgid ""
+"Unable to save hostname values through D-Bus.\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Не удалось сохранить значения имени узла через D-Bus.\n"
+"\n"
+"Подробности: %s"
+
+#: manahost/dialog.py:314
+msgid "Reload failed"
+msgstr "Не удалось перезагрузить"
+
+#: manahost/dialog.py:315
+#, python-format
+msgid ""
+"Changes were sent, but reloading current system values failed.\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Изменения отправлены, но не удалось перезагрузить текущие системные "
+"значения.\n"
+"\n"
+"Подробности: %s"
+
+#: manahost/helpinfo.py:26
+msgid "Go to index"
+msgstr "Перейти к указателю"
+
+#: manahost/helpinfo.py:27 manahost/helpinfo.py:45
+msgid "Editable fields"
+msgstr "Редактируемые поля"
+
+#: manahost/helpinfo.py:28 manahost/helpinfo.py:66
+msgid "Chassis field policy"
+msgstr "Правила для поля корпуса"
+
+#: manahost/helpinfo.py:29 manahost/helpinfo.py:76
+msgid "Applying changes"
+msgstr "Применение изменений"
+
+#: manahost/helpinfo.py:39
+msgid ""
+"This tool reads and writes hostname information through "
+"org.freedesktop.hostname1 on D-Bus."
+msgstr ""
+"Эта утилита читает и записывает информацию об имени узла через "
+"org.freedesktop.hostname1 в шине D-Bus."
+
+#: manahost/helpinfo.py:47
+msgid ""
+"<ul><li><b>Hostname</b>: transient runtime hostname. This property is the "
+"actual hostname configured in the kernel.<br>It can be different from the "
+"static hostname. This property is never empty.</li><li><b>Static hostname</"
+"b>: persistent hostname saved on disk and configured in /etc/hostname.</"
+"li><li><b>Pretty hostname</b>: user-friendly display name. This property "
+"exposes the pretty hostname which is a free-form UTF-8 hostname for "
+"presentation to the user.<br>User interfaces should ensure that the pretty "
+"hostname and the static hostname stay in sync. E.g. when the former is "
+"<i>Lennart’s Computer</i> the latter should be <i>lennarts-computer</i>.</"
+"li><li><b>Icon name</b>: desktop icon identifier for the machine. This "
+"property exposes the icon name following the XDG icon naming specification."
+"<br>If not set, information such as the chassis type (see below) is used to "
+"find a suitable fallback icon name (i.e. <i>computer-laptop</i> vs. "
+"<i>computer-desktop</i> is picked based on the chassis information). If no "
+"such data is available, the empty string is returned.<br>In that case an "
+"application should fall back to a replacement icon, for example <i>computer</"
+"i>.<br>If this property is set to the empty string, the automatic fallback "
+"name selection is enabled again.</li><li><b>Chassis</b>: hardware type "
+"(desktop, laptop, vm, server, etc.). This property exposes a chassis type, "
+"one of the currently defined chassis types.<br>Note that in most cases the "
+"chassis type will be determined automatically from DMI/SMBIOS/ACPI firmware "
+"information.<br>Writing to this setting is hence useful only to override "
+"misdetected chassis types, or to configure the chassis type if it could not "
+"be auto-detected.<br>Set this property to the empty string to reenable the "
+"automatic detection of the chassis type from firmware information.</li></ul>"
+msgstr ""
+"<ul><li><b>Имя узла</b>: текущее временное имя узла. Это фактическое имя "
+"узла, настроенное в ядре.<br>Оно может отличаться от статического имени "
+"узла. Это значение никогда не бывает пустым.</li><li><b>Статическое имя "
+"узла</b>: постоянное имя узла, сохраняемое на диске и заданное в файле /etc/"
+"hostname.</li><li><b>Понятное имя</b>: удобное для пользователя имя для "
+"отображения. Эта свойство представляет собой понятное имя узла в "
+"произвольной форме UTF-8 для представления пользователю.<br>Интерфейсы "
+"пользователя должны обеспечивать синхронизацию понятного и статического имен "
+"узла. Например, если понятное имя — <i>Lennart’s Computer</i>, то "
+"статическое имя должно быть <i>lennarts-computer</i>.</li><li><b>Имя значка</"
+"b>: идентификатор значка компьютера для рабочего стола. Это свойство задаёт "
+"имя значка в соответствии со спецификацией именования значков XDG.<br>Если "
+"оно не задано, для поиска подходящего запасного значка используются сведения "
+"о типе корпуса (см. ниже) — например, выбирается <i>computer-laptop</i> или "
+"<i>computer-desktop</i> в зависимости от информации о корпусе. Если такие "
+"данные отсутствуют, возвращается пустая строка.<br>В таком случае приложение "
+"должно использовать запасной значок, например <i>computer</i>.<br>Если для "
+"этого свойства установлена пустая строка, автоматический выбор имени значка "
+"включается снова.</li><li><b>Корпус</b>: тип аппаратного обеспечения "
+"(десктоп, ноутбук, виртуальная машина, сервер и т. д.). Это свойство "
+"определяет тип корпуса из числа предварительно определённых типов."
+"<br>Обратите внимание, что в большинстве случаев тип корпуса определяется "
+"автоматически на основе данных микропрограммы DMI/SMBIOS/ACPI.<br>Поэтому "
+"запись в этот параметр полезна только для переопределения неправильно "
+"определённого типа корпуса или для настройки типа корпуса, если его не "
+"удалось обнаружить автоматически.<br>Установите для этого свойства пустую "
+"строку, чтобы снова включить автоматическое определение типа корпуса по "
+"данным микропрограммы.</li></ul>"
+
+#: manahost/helpinfo.py:68
+msgid ""
+"Chassis is usually auto-detected correctly by the system. For safety, manual "
+"editing is disabled by default when a value already exists. If chassis is "
+"empty, manual editing is enabled by default through the dedicated checkbox."
+msgstr ""
+"Система обычно правильно определяет тип корпуса автоматически. В целях "
+"безопасности ручное редактирование по умолчанию отключено, если значение уже "
+"существует. Если поле корпуса пустое, ручное редактирование включается по "
+"умолчанию с помощью специального флажка."
+
+#: manahost/helpinfo.py:78
+msgid ""
+"After pressing Save, changes are sent through D-Bus and the dialog reloads "
+"values from the running system to show the effective state."
+msgstr ""
+"После нажатия кнопки «Сохранить» изменения отправляются через D-Bus, а окно "
+"перезагружает значения из работающей системы, чтобы показать актуальное "
+"состояние."
