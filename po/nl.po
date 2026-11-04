@@ -1,0 +1,359 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the manahost package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# dragnadh, 2026
+# Marja van Waes, 2026
+# Dennis Holierhoek <dennis.hh@hotmail.com>, 2026
+# Yuri Chornoivan <yurchor@ukr.net>, 2026
+# Marc Laan, 2026
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: manahost 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-02 15:02+0100\n"
+"PO-Revision-Date: 2026-11-02 17:41+0000\n"
+"Last-Translator: Marc Laan, 2026\n"
+"Language-Team: Dutch (https://app.transifex.com/MageiaLinux/teams/9361/nl/)\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: manahost/__init__.py:27
+msgid "ManaTools manahost"
+msgstr "ManaTools manahost"
+
+#: manahost/__init__.py:30
+msgid ""
+"Graphical hostname control tool using org.freedesktop.hostname1 with a "
+"backend-independent ManaTools Abstract User Interface."
+msgstr ""
+"Grafisch gereedschap voor hostnaambeheer, dat gebruikmaakt van "
+"org.freedesktop.hostname1, voorzien van een backend-onafhankelijke ManaTools-"
+"gebruikersinterface."
+
+#: manahost/__init__.py:35
+msgid "Manage the system hostname through the systemd hostname1 API."
+msgstr "Beheer de hostnaam van het systeem via de systemd hostname1-API."
+
+#: manahost/app.py:99
+msgid "Developers"
+msgstr "Ontwikkelaars"
+
+#: manahost/app.py:105
+msgid "Project Links"
+msgstr "Project-links"
+
+#: manahost/app.py:112
+msgid "Runtime"
+msgstr "Runtime"
+
+#: manahost/app.py:140
+msgid "Enable application logging on the console."
+msgstr "Schakel applicatielogging in op de console (terminal)"
+
+#: manahost/app.py:141
+msgid "Write log entries to PATHNAME instead of the console."
+msgstr "Schrijf logvermeldingen naar PADNAAM, in plaats van naar de console. "
+
+#: manahost/app.py:142
+msgid "Enable debug logging output."
+msgstr "Schakel de uitvoer in van fout-opsporingsregistratie."
+
+#: manahost/dialog.py:36
+msgid "Transient hostname for the current running system."
+msgstr "Tijdelijke hostnaam voor het huidige draaiende systeem."
+
+#: manahost/dialog.py:37
+msgid "Persistent hostname stored on disk and used at boot."
+msgstr ""
+"Permanente hostnaam die op schijf wordt opgeslagen en bij het opstarten "
+"wordt gebruikt."
+
+#: manahost/dialog.py:38
+msgid "Human-friendly hostname used in desktop and shell views."
+msgstr ""
+"Gebruiksvriendelijke hostnaam, die wordt gebruikt in desktop- en shell-"
+"weergaven."
+
+#: manahost/dialog.py:39
+msgid "Desktop icon name representing the machine class."
+msgstr "Naam van het bureaublad-pictogram, dat de machineklasse weergeeft."
+
+#: manahost/dialog.py:40
+msgid "Hardware chassis type (desktop, laptop, vm, server, etc.)."
+msgstr "Type hardwarebehuizing (desktop, laptop, VM, server, enz.)."
+
+#: manahost/dialog.py:62
+msgid "System hostname"
+msgstr "Hostnaam van het systeem"
+
+#: manahost/dialog.py:63
+msgid "Hostname"
+msgstr "Hostname"
+
+#: manahost/dialog.py:64
+msgid "Static hostname"
+msgstr "Statische hostnaam"
+
+#: manahost/dialog.py:65
+msgid "Pretty hostname"
+msgstr "Vriendelijke hostnaam"
+
+#: manahost/dialog.py:66
+msgid "Icon name"
+msgstr "Icoonnaam"
+
+#: manahost/dialog.py:67
+msgid "Chassis"
+msgstr "Chassis"
+
+#: manahost/dialog.py:70
+msgid "System information"
+msgstr "Systeem-informatie"
+
+#: manahost/dialog.py:71
+msgid "Kernel"
+msgstr "Kernel"
+
+#: manahost/dialog.py:72
+msgid "Operating system"
+msgstr "Besturingssysteem"
+
+#: manahost/dialog.py:73
+msgid "Hardware vendor"
+msgstr "Hardware-fabrikant"
+
+#: manahost/dialog.py:74
+msgid "Hardware model"
+msgstr "Hardware-model"
+
+#: manahost/dialog.py:75
+msgid "Hardware SKU"
+msgstr "Hardware-artikelnummer (SKU)"
+
+#: manahost/dialog.py:76
+msgid "Hardware version"
+msgstr "Hardware-version"
+
+#: manahost/dialog.py:77
+msgid "Firmware version"
+msgstr "Firmware-versie"
+
+#: manahost/dialog.py:78
+msgid "Firmware date"
+msgstr "Firmware-datum"
+
+#: manahost/dialog.py:79
+msgid "Machine ID"
+msgstr "Machine-ID"
+
+#: manahost/dialog.py:80
+msgid "Boot ID"
+msgstr "Opstart-ID"
+
+#: manahost/dialog.py:85
+msgid "&Help"
+msgstr "&Hulp"
+
+#: manahost/dialog.py:86
+msgid "Open help with field descriptions and usage notes."
+msgstr "Open hulp met veldbeschrijvingen en gebruiksinstructies."
+
+#: manahost/dialog.py:89
+msgid "&About"
+msgstr "Ove&r"
+
+#: manahost/dialog.py:90
+msgid "Show application information, version and credits."
+msgstr "Toon programma-informatie, versie en credits."
+
+#: manahost/dialog.py:93
+msgid "&Save"
+msgstr "O&pslaan"
+
+#: manahost/dialog.py:95
+msgid "Save modified hostname values to the system."
+msgstr "Sla gewijzigde hostnaam-waarden op in het systeem."
+
+#: manahost/dialog.py:98
+msgid "&Close"
+msgstr "&Sluiten"
+
+#: manahost/dialog.py:99
+msgid "Close this dialog without applying new changes."
+msgstr "Sluit dit dialoogvenster zonder nieuwe wijzigingen toe te passen."
+
+#: manahost/dialog.py:185
+msgid "Allow editing chassis manually"
+msgstr "Handmatige bewerking van het chassis toestaan"
+
+#: manahost/dialog.py:189
+msgid "Enable only if automatic chassis detection is missing or incorrect."
+msgstr ""
+"Alleen inschakelen als automatische chassis-detectie ontbreekt of onjuist is."
+
+#: manahost/dialog.py:233
+msgid "Preview"
+msgstr "Voorbeeld"
+
+#: manahost/dialog.py:236
+msgid "Preview of the icon selected in Icon name."
+msgstr "Voorbeeld van het pictogram dat is geselecteerd onder 'Pictogramnaam'."
+
+#: manahost/dialog.py:297
+msgid "Invalid input"
+msgstr "Ongeldige invoer"
+
+#: manahost/dialog.py:298
+#, python-format
+msgid ""
+"One or more fields contain invalid values.\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Eén of meer velden bevatten ongeldige waarden.\n"
+"\n"
+"Details: %s"
+
+#: manahost/dialog.py:303
+msgid "Save failed"
+msgstr "Opslaan is mislukt"
+
+#: manahost/dialog.py:304
+#, python-format
+msgid ""
+"Unable to save hostname values through D-Bus.\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Kan hostnaam-waarden niet opslaan via D-Bus.\n"
+"\n"
+"Details: %s"
+
+#: manahost/dialog.py:314
+msgid "Reload failed"
+msgstr "Herladen is mislukt"
+
+#: manahost/dialog.py:315
+#, python-format
+msgid ""
+"Changes were sent, but reloading current system values failed.\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Wijzigingen zijn verzonden, maar het herladen van de huidige systeemwaarden "
+"is mislukt.\n"
+"\n"
+"Details: %s"
+
+#: manahost/helpinfo.py:26
+msgid "Go to index"
+msgstr "Ga naar index"
+
+#: manahost/helpinfo.py:27 manahost/helpinfo.py:45
+msgid "Editable fields"
+msgstr "Bewerkbare velden"
+
+#: manahost/helpinfo.py:28 manahost/helpinfo.py:66
+msgid "Chassis field policy"
+msgstr "Beleid voor het chassis-veld"
+
+#: manahost/helpinfo.py:29 manahost/helpinfo.py:76
+msgid "Applying changes"
+msgstr "Wijzigingen toepassen"
+
+#: manahost/helpinfo.py:39
+msgid ""
+"This tool reads and writes hostname information through "
+"org.freedesktop.hostname1 on D-Bus."
+msgstr ""
+"Dit hulpprogramma leest en schrijft hostnaam-gegevens via "
+"org.freedesktop.hostname1 op D-Bus."
+
+#: manahost/helpinfo.py:47
+msgid ""
+"<ul><li><b>Hostname</b>: transient runtime hostname. This property is the "
+"actual hostname configured in the kernel.<br>It can be different from the "
+"static hostname. This property is never empty.</li><li><b>Static hostname</"
+"b>: persistent hostname saved on disk and configured in /etc/hostname.</"
+"li><li><b>Pretty hostname</b>: user-friendly display name. This property "
+"exposes the pretty hostname which is a free-form UTF-8 hostname for "
+"presentation to the user.<br>User interfaces should ensure that the pretty "
+"hostname and the static hostname stay in sync. E.g. when the former is "
+"<i>Lennart’s Computer</i> the latter should be <i>lennarts-computer</i>.</"
+"li><li><b>Icon name</b>: desktop icon identifier for the machine. This "
+"property exposes the icon name following the XDG icon naming specification."
+"<br>If not set, information such as the chassis type (see below) is used to "
+"find a suitable fallback icon name (i.e. <i>computer-laptop</i> vs. "
+"<i>computer-desktop</i> is picked based on the chassis information). If no "
+"such data is available, the empty string is returned.<br>In that case an "
+"application should fall back to a replacement icon, for example <i>computer</"
+"i>.<br>If this property is set to the empty string, the automatic fallback "
+"name selection is enabled again.</li><li><b>Chassis</b>: hardware type "
+"(desktop, laptop, vm, server, etc.). This property exposes a chassis type, "
+"one of the currently defined chassis types.<br>Note that in most cases the "
+"chassis type will be determined automatically from DMI/SMBIOS/ACPI firmware "
+"information.<br>Writing to this setting is hence useful only to override "
+"misdetected chassis types, or to configure the chassis type if it could not "
+"be auto-detected.<br>Set this property to the empty string to reenable the "
+"automatic detection of the chassis type from firmware information.</li></ul>"
+msgstr ""
+"<ul><li><b>Hostnaam</b>: tijdelijke runtime-hostnaam. Deze eigenschap is de "
+"werkelijke hostnaam zoals ingesteld in de kernel.<br>Deze kan afwijken van "
+"de statische hostnaam. Deze eigenschap is nooit leeg. .</li><li><b>Statische "
+"hostnaam</b>: permanente hostname is opgeslagen op schijf en ingesteld in /"
+"etc/hostname.</li><li><b>Leesvriendelijke hostname</b>: een "
+"gebruiksvriendelijke weergavenaam. Deze eigenschap bevat de "
+"'leesvriendelijke'-hostnaam, een vrije UTF-8-tekenreeks die bedoeld is voor "
+"presentatie aan de gebruiker.<br>Gebruikersinterfaces dienen ervoor te "
+"zorgen dat de 'leesvriendelijke'-hostnaam en de statische hostnaam synchroon "
+"blijven; als de 'leesvriendelijke'-hostnaam bijvoorbeeld <i>Lennart’s "
+"Computer</i> is, dan hoort die laatste te heten: <i>lennarts-computer</i>.</"
+"li><li><b>Icoon-naam</b>: identificatie voor het bureaubladicoon van de "
+"machine. Deze eigenschap bevat de icoonnaam volgens de XDG-specificatie voor "
+"icoonnamen.<br>Indien niet ingesteld, dan wordt informatie zoals het type "
+"behuizing (zie hieronder) gebruikt om een ​​geschikt alternatief te bepalen. "
+"Zo wordt bijvoorbeeld <i>computer-laptop</i> vs. <i>computer-desktop</i> "
+"gekozen op basis van de chassis-informatie. Als dergelijke informatie niet "
+"beschikbaar is, wordt een lege tekenreeks teruggestuurd.<br>In dat geval "
+"dient een programma terug te vallen op een standaardicoon, zoals<i>computer</"
+"i>.<br>Als deze eigenschap wordt ingesteld op een lege tekenreeks, wordt de "
+"automatische selectie van de icoonnaam opnieuw geactiveerd. </"
+"li><li><b>Chassis (behuizing)</b>: hardware-type (desktop, laptop, VM, "
+"server, etc.). Deze eigenschap geeft een chassis-type weer, gekozen uit de "
+"reeks gedefinieerde typen. <br>Merk op dat het type behuizing in de meeste "
+"gevallen automatisch wordt bepaald aan de hand van DMI/SMBIOS/ACPI-firmware-"
+"gegevens. <br>Het handmatig instellen van deze waarde is daarom alleen "
+"nuttig om een ​​onjuist gedetecteerd type behuizing te corrigeren, of om het "
+"type behuizing op te geven wanneer automatische detectie niet mogelijk was. "
+"<br>Stel deze eigenschap in op een lege tekenreeks, om de automatische "
+"detectie van het type behuizing op basis van firmwaregegevens opnieuw in te "
+"schakelen.</li></ul>"
+
+#: manahost/helpinfo.py:68
+msgid ""
+"Chassis is usually auto-detected correctly by the system. For safety, manual "
+"editing is disabled by default when a value already exists. If chassis is "
+"empty, manual editing is enabled by default through the dedicated checkbox."
+msgstr ""
+"Het chassis wordt doorgaans automatisch en correct door het systeem "
+"gedetecteerd. Om veiligheidsredenen is handmatige bewerking standaard "
+"uitgeschakeld wanneer er al een waarde aanwezig is. Als het chassisveld leeg "
+"is, wordt handmatige bewerking standaard ingeschakeld via het daarvoor "
+"bestemde selectievakje."
+
+#: manahost/helpinfo.py:78
+msgid ""
+"After pressing Save, changes are sent through D-Bus and the dialog reloads "
+"values from the running system to show the effective state."
+msgstr ""
+"Na het indrukken van 'Opslaan' worden de wijzigingen via D-Bus verstuurd en "
+"laadt het dialoogvenster de waarden opnieuw vanuit het draaiende systeem om "
+"de actuele status weer te geven."
