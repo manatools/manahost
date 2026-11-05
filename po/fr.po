@@ -1,0 +1,355 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the manahost package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Aurelien <aoudelet@outlook.com>, 2026
+# stroibe974 <sebsweb@gmail.com>, 2026
+# Yves Brungard, 2026
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: manahost 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-02 15:02+0100\n"
+"PO-Revision-Date: 2026-11-02 17:41+0000\n"
+"Last-Translator: Yves Brungard, 2026\n"
+"Language-Team: French (https://app.transifex.com/MageiaLinux/teams/9361/"
+"fr/)\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
+"1000000 == 0 ? 1 : 2;\n"
+
+#: manahost/__init__.py:27
+msgid "ManaTools manahost"
+msgstr "manahost par ManaTools"
+
+#: manahost/__init__.py:30
+msgid ""
+"Graphical hostname control tool using org.freedesktop.hostname1 with a "
+"backend-independent ManaTools Abstract User Interface."
+msgstr ""
+"Interface graphique de réglage du nom d'hôte utilisant "
+"org.freedesktop.hostname1 et les composants graphiques Manatools."
+
+#: manahost/__init__.py:35
+msgid "Manage the system hostname through the systemd hostname1 API."
+msgstr "Gère le nom d'hôte du système grâce à une API hostname1 de systemd."
+
+#: manahost/app.py:99
+msgid "Developers"
+msgstr "Développeurs"
+
+#: manahost/app.py:105
+msgid "Project Links"
+msgstr "Liens du projet"
+
+#: manahost/app.py:112
+msgid "Runtime"
+msgstr "Moteur"
+
+#: manahost/app.py:140
+msgid "Enable application logging on the console."
+msgstr "Activation de l'affichage des messages de trace dans la console."
+
+#: manahost/app.py:141
+msgid "Write log entries to PATHNAME instead of the console."
+msgstr ""
+"Ecrit les entrée d'historique vers PATHNAME plutôt que dans la console."
+
+#: manahost/app.py:142
+msgid "Enable debug logging output."
+msgstr "Active une sortie de débogage."
+
+#: manahost/dialog.py:36
+msgid "Transient hostname for the current running system."
+msgstr "Nom de machine temporaire pour le système en cours de fonctionnement."
+
+#: manahost/dialog.py:37
+msgid "Persistent hostname stored on disk and used at boot."
+msgstr ""
+"Nom de machine permanent enregistré sur le disque et utilisé au démarrage."
+
+#: manahost/dialog.py:38
+msgid "Human-friendly hostname used in desktop and shell views."
+msgstr "Nom de machine convivial utilisé pour le bureau et la console."
+
+#: manahost/dialog.py:39
+msgid "Desktop icon name representing the machine class."
+msgstr "Nom d'une image représentant la classe de la machine."
+
+#: manahost/dialog.py:40
+msgid "Hardware chassis type (desktop, laptop, vm, server, etc.)."
+msgstr "Type de structure matérielle (desktop, laptop, vm, server, etc.)."
+
+#: manahost/dialog.py:62
+msgid "System hostname"
+msgstr "Nom de machine du système"
+
+#: manahost/dialog.py:63
+msgid "Hostname"
+msgstr "Nom de la machine"
+
+#: manahost/dialog.py:64
+msgid "Static hostname"
+msgstr "Nom statique de la machine"
+
+#: manahost/dialog.py:65
+msgid "Pretty hostname"
+msgstr "Nom secondaire de la machine"
+
+#: manahost/dialog.py:66
+msgid "Icon name"
+msgstr "Nom d'icône"
+
+#: manahost/dialog.py:67
+msgid "Chassis"
+msgstr "Structure"
+
+#: manahost/dialog.py:70
+msgid "System information"
+msgstr "Informations du système"
+
+#: manahost/dialog.py:71
+msgid "Kernel"
+msgstr "Noyau"
+
+#: manahost/dialog.py:72
+msgid "Operating system"
+msgstr "Système d'exploitation"
+
+#: manahost/dialog.py:73
+msgid "Hardware vendor"
+msgstr "Fabricant"
+
+#: manahost/dialog.py:74
+msgid "Hardware model"
+msgstr "Modèle"
+
+#: manahost/dialog.py:75
+msgid "Hardware SKU"
+msgstr "Référence du matériel"
+
+#: manahost/dialog.py:76
+msgid "Hardware version"
+msgstr "Version du matériel"
+
+#: manahost/dialog.py:77
+msgid "Firmware version"
+msgstr "Version du micrologiciel"
+
+#: manahost/dialog.py:78
+msgid "Firmware date"
+msgstr "Date du micrologiciel"
+
+#: manahost/dialog.py:79
+msgid "Machine ID"
+msgstr "Identifiant"
+
+#: manahost/dialog.py:80
+msgid "Boot ID"
+msgstr "Identifiant du démarrage"
+
+#: manahost/dialog.py:85
+msgid "&Help"
+msgstr "&Aide"
+
+#: manahost/dialog.py:86
+msgid "Open help with field descriptions and usage notes."
+msgstr ""
+"Ouvrir l'aide avec la description des champs et des notes d'utilisation."
+
+#: manahost/dialog.py:89
+msgid "&About"
+msgstr "À &propos"
+
+#: manahost/dialog.py:90
+msgid "Show application information, version and credits."
+msgstr "Affiche des informations de l'application, la version et les crédits."
+
+#: manahost/dialog.py:93
+msgid "&Save"
+msgstr "&Sauvegarder"
+
+#: manahost/dialog.py:95
+msgid "Save modified hostname values to the system."
+msgstr "Sauvegarde les noms modifiés dans le système."
+
+#: manahost/dialog.py:98
+msgid "&Close"
+msgstr "&Fermer"
+
+#: manahost/dialog.py:99
+msgid "Close this dialog without applying new changes."
+msgstr "Abandonne les changements et ferme la boîte de dialogue."
+
+#: manahost/dialog.py:185
+msgid "Allow editing chassis manually"
+msgstr "Autorise la modification manuelle de la structure"
+
+#: manahost/dialog.py:189
+msgid "Enable only if automatic chassis detection is missing or incorrect."
+msgstr ""
+"N'activez que si la structure est manquante ou détectée de manière "
+"incorrecte."
+
+#: manahost/dialog.py:233
+msgid "Preview"
+msgstr "Aperçu"
+
+#: manahost/dialog.py:236
+msgid "Preview of the icon selected in Icon name."
+msgstr "Aperçu de l'icône désignée par son nom."
+
+#: manahost/dialog.py:297
+msgid "Invalid input"
+msgstr "Entrée invalide"
+
+#: manahost/dialog.py:298
+#, python-format
+msgid ""
+"One or more fields contain invalid values.\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Un ou plusieurs champs contiennent des valeurs non valides.\n"
+"\n"
+"Détails: %s"
+
+#: manahost/dialog.py:303
+msgid "Save failed"
+msgstr "Échec à l'enregistrement"
+
+#: manahost/dialog.py:304
+#, python-format
+msgid ""
+"Unable to save hostname values through D-Bus.\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Échec de l'enregistrement via D-Bus.\n"
+"\n"
+"Détails: %s"
+
+#: manahost/dialog.py:314
+msgid "Reload failed"
+msgstr "Échec du rechargement"
+
+#: manahost/dialog.py:315
+#, python-format
+msgid ""
+"Changes were sent, but reloading current system values failed.\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Les modifications ont été soumises, mais le rechargement des valeurs "
+"actualisées a échoué.\n"
+"\n"
+"Détails: %s"
+
+#: manahost/helpinfo.py:26
+msgid "Go to index"
+msgstr "Aller à l'index"
+
+#: manahost/helpinfo.py:27 manahost/helpinfo.py:45
+msgid "Editable fields"
+msgstr "Champs modifiables"
+
+#: manahost/helpinfo.py:28 manahost/helpinfo.py:66
+msgid "Chassis field policy"
+msgstr "Règles du champ de structure"
+
+#: manahost/helpinfo.py:29 manahost/helpinfo.py:76
+msgid "Applying changes"
+msgstr "Sauvegarde des changements…"
+
+#: manahost/helpinfo.py:39
+msgid ""
+"This tool reads and writes hostname information through "
+"org.freedesktop.hostname1 on D-Bus."
+msgstr ""
+"Cet outil lit et écrit les informations via org.freedesktop.hostname1 sur D-"
+"Bus."
+
+#: manahost/helpinfo.py:47
+msgid ""
+"<ul><li><b>Hostname</b>: transient runtime hostname. This property is the "
+"actual hostname configured in the kernel.<br>It can be different from the "
+"static hostname. This property is never empty.</li><li><b>Static hostname</"
+"b>: persistent hostname saved on disk and configured in /etc/hostname.</"
+"li><li><b>Pretty hostname</b>: user-friendly display name. This property "
+"exposes the pretty hostname which is a free-form UTF-8 hostname for "
+"presentation to the user.<br>User interfaces should ensure that the pretty "
+"hostname and the static hostname stay in sync. E.g. when the former is "
+"<i>Lennart’s Computer</i> the latter should be <i>lennarts-computer</i>.</"
+"li><li><b>Icon name</b>: desktop icon identifier for the machine. This "
+"property exposes the icon name following the XDG icon naming specification."
+"<br>If not set, information such as the chassis type (see below) is used to "
+"find a suitable fallback icon name (i.e. <i>computer-laptop</i> vs. "
+"<i>computer-desktop</i> is picked based on the chassis information). If no "
+"such data is available, the empty string is returned.<br>In that case an "
+"application should fall back to a replacement icon, for example <i>computer</"
+"i>.<br>If this property is set to the empty string, the automatic fallback "
+"name selection is enabled again.</li><li><b>Chassis</b>: hardware type "
+"(desktop, laptop, vm, server, etc.). This property exposes a chassis type, "
+"one of the currently defined chassis types.<br>Note that in most cases the "
+"chassis type will be determined automatically from DMI/SMBIOS/ACPI firmware "
+"information.<br>Writing to this setting is hence useful only to override "
+"misdetected chassis types, or to configure the chassis type if it could not "
+"be auto-detected.<br>Set this property to the empty string to reenable the "
+"automatic detection of the chassis type from firmware information.</li></ul>"
+msgstr ""
+"<ul><li><b>Nom de machine</b>: Nom de machine temporaire en fonctionnement. "
+"Cette propriété correspond au nom de machine effectivement configuré dans le "
+"noyau.<br>Elel peut être différente de la valeur enregistrée. Elle n'est "
+"jamais vide.</li><li><b>Nom de machine statique</b>: Nom de machine "
+"persistant enregistré sur le disque et configuré dans /etc/hostname.</"
+"li><li><b>Nom de machine secondaire</b>: nom pour un affichage convivial. "
+"Cette propriété expose le nom de machine secondaire, qui est un nom au "
+"format libre en UTF-8 destiné à être présenté à l'utilisateur.<br>Les noms "
+"de machine statique et secondaire doivent rester en concordance. Par "
+"exemple. si l'un est <i>Ordinateur de Lennart</i> l'autre doit être "
+"<i>ordinateur-de-lennart</i>.</li><li><b>Nom d'icône</b>: nom d'cône "
+"identifiant la machine. Cette propriété affiche le nom de l'icône selon la "
+"spécification des noms d'icônes XDG.<br>Par défaut, l'information telle que "
+"celle du type de structure (voir ci-dessous) est utilisée pour trouver un "
+"nom d'icône (par exemple. <i>computer-laptop</i> ou <i>computer-desktop</i> "
+"est déterminé sur la base de l'information de structure). Si cette "
+"information n'est pas disponible, le champ reste vide.<br>In that case an "
+"application should fall back to a replacement icon, for example <i>computer</"
+"i>.<br>If this property is set to the empty string, the automatic fallback "
+"name selection is enabled again.</li><li><b>Structure</b>: type de matériel "
+"(station, portable, machine virtuelle, serveur, etc.). Cette propriété "
+"correspond à un type de structure, parmi les types définis.<br>Note que dans "
+"la plupart des cas, la valeur est déterminée de manière automatique à partir "
+"des informations de micrologiciel DMI/SMBIOS/ACPI.<br>L'écriture d'une "
+"valeur n'est ainsi requis que pour contrer une mauvaise détection ou une "
+"absence de détection.<br>Supprimer la valeur pour permettre une nouvelle "
+"détection automatique de la structure à partir des informations du "
+"micrologiciel.</li></ul>"
+
+#: manahost/helpinfo.py:68
+msgid ""
+"Chassis is usually auto-detected correctly by the system. For safety, manual "
+"editing is disabled by default when a value already exists. If chassis is "
+"empty, manual editing is enabled by default through the dedicated checkbox."
+msgstr ""
+"La structure est généralement détectée automatiquement et correctement par "
+"le système. Par mesure de sécurité, la modification manuelle est désactivée "
+"par défaut lorsqu'une valeur existe déjà. Si le champ est vide, la "
+"modification manuelle est activée par défaut via la case à cocher prévue à "
+"cet effet."
+
+#: manahost/helpinfo.py:78
+msgid ""
+"After pressing Save, changes are sent through D-Bus and the dialog reloads "
+"values from the running system to show the effective state."
+msgstr ""
+"Une fois que vous avez cliqué sur « Enregistrer », les modifications sont "
+"transmises via D-Bus et la boîte de dialogue recharge les valeurs à partir "
+"du système en cours d'exécution afin d'afficher l'état actuel."
