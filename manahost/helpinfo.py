@@ -51,7 +51,7 @@ class HostnameHelpInfo(helpdata.HelpInfoBase):
                     "<li><b>Pretty hostname</b>: user-friendly display name. This property exposes the pretty hostname which is a free-form UTF-8 hostname for presentation to the user.<br>" \
                     "User interfaces should ensure that the pretty hostname and the static hostname stay in sync. E.g. when the former is <i>Lennart’s Computer</i> the latter should be <i>lennarts-computer</i>.</li>"
                     "<li><b>Icon name</b>: desktop icon identifier for the machine. This property exposes the icon name following the XDG icon naming specification.<br>" \
-                    "If not set, information such as the chassis type (see below) is used to find a suitable fallback icon name (i.e. <i>computer-laptop</i> vs. <i>computer-desktop</i> is picked based on the chassis information). If no such data is available, the empty string is returned.<br>" \
+                    "If not set, information such as the chassis type (see below) is used to find a suitable fallback icon name (i.e. <i>computer-laptop</i> vs. <i>computer-desktop</i> is picked based on the chassis information).<br>" \
                     "In that case an application should fall back to a replacement icon, for example <i>computer</i>.<br>" \
                     "If this property is set to the empty string, the automatic fallback name selection is enabled again.</li>"
                     "<li><b>Chassis</b>: hardware type (desktop, laptop, vm, server, etc.). This property exposes a chassis type, one of the currently defined chassis types.<br>" \
